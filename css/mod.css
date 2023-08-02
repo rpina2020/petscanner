@@ -21,10 +21,10 @@
     text-align: right;
     margin-left: 21%;
 }
-.fafafaBtnIntro {
+.app_btn {
     width: 50%;
-    position: absolute;
-    top: 57%;
+/*    position: absolute;
+    top: 57%;*/
     left: 22%;
 }
 .loading{
@@ -99,7 +99,7 @@
 #one > div.ui-content > p:nth-child(5) > a {
     /* margin: 20% 0 0 3%; */
 }
-.fafafalogo{
+.app_logo{
     width: 20%;
     float: left;
     margin: 3%;

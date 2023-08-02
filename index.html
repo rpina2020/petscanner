@@ -37,8 +37,9 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-        <link rel="stylesheet" href="css/mod.css" />
         <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/mod.css" />
+        <link rel="stylesheet" href="css/cards.css" />
         <style type="text/css">
             a.ui-btn-icon-notext.ui-corner-all {
                 float: left; 
@@ -144,19 +145,11 @@
                 <!-- ///////////////////////////////////////////////////////////////// -->
                 <section id="loading" class="loading">
                     <div class="ui-grid-b">
-                        <img class="animated bounceInDown fafafaIntro" src="img/logocompletoblanco.png" stlye="width: 75%;" style="width: 65%;margin: 0 18%!important;display: block !important;"><br><br>
-                        <!-- <div class="cargando animated infinite fadeIn delay-4s animated">CARGANDO...</div> -->  
+                        <img class="animated bounceInDown fafafaIntro" src="img/logocompletoblanco.png" stlye="width: 75%;" style="width: 65%;margin: 0 18%!important;display: block !important;">
                     </div>
                 </section>
-                <!--------------------------------------- PAGINA INTRO --------------------------------------->
-                <section data-role="page" id="intro_1" style="min-height: 640px;background-color: #FFCC01;">
-                    <img class="animated infinite pulse fafafaIntro" src="img/banner.png">        
-                    <p><a href="#one" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" style="position: relative !important;">INICIAR</a></p>
 
-                </section>
-                <!--------------------------------------- PAGINA INTRO --------------------------------------->
-
-                <!----------------------------------- PAGINA NUMBER PLAYERS ---------------------------------->
+                <!----------------------------------- PAGINA LOGIN ---------------------------------->
                 <section data-role="page" id="login" data-url="login" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
 
                     <div role="main" class="ui-content">
@@ -164,128 +157,98 @@
                         <h3 style="margin: 0 0 5%;text-align: center;">INGRESAR</h3>
                         <input type="text" id="text-usuario" value="" placeholder="Usuario">
                         <input type="text" id="text-pass" value="" placeholder="Clave">
-                        <a href="#" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" onclick="$('#text-usuario').val() != '' && $('#text-pass').val() ? setPatenteWhatsapp() : alert('Ambos campos son obligatorios.')">INICIAR</a>
+                        <div class="" style="margin: 3% !important;">
+                            <a href="" style="margin: 0 0 5%;text-align: center;float: left;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">OLVIDE MI CONSTRASEÑA
+                            </a>
+                            <a href="" style="margin: 0 0 5%;text-align: center;float: right;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">REGISTRARSE
+                            </a>
+                            <a href="#info" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">INICIAR</a>
+                        </div>
                     </div>
 
-                    f
-                <div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="popupLogin-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="popupLogin-popup"><div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
-                        <form>
-                            <div style="padding:10px 20px;">
-                                <h3>Datos de Producto</h3>
-                                
-                                <label for="productId" class="ui-hidden-accessible">ID:</label>
-                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productId" value="" placeholder="ID de Producto" data-theme="a"></div>
-                                
-                                <label for="productCODE" class="ui-hidden-accessible">CODE:</label>
-                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productCODE" value="" placeholder="CODE de Producto" data-theme="a"></div>                                
-                                
-                                <label for="productName" class="ui-hidden-accessible">NOMBRE:</label>
-                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productName" value="" placeholder="NOMBRE de Producto" data-theme="a"></div>
-                                
-                                <label for="productPRECIO" class="ui-hidden-accessible">PRECIO:</label>
-                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="number" name="user" id="productPRECIO" value="" placeholder="PRECIO de Producto" data-theme="a"></div>
+                </section>
+                <!----------------------------------- PAGINA LOGIN ---------------------------------->
 
-                                <label for="productTypeCODE" class="ui-hidden-accessible">TIPO CODE:</label>
-                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productTypeCODE" value="" placeholder="TIPO CODE de Producto" data-theme="a"></div>
-                                
-                                <a id="guardarBtn" href="#" class="ui-btn ui-btn-inline btnModal">GUARDAR</a>
-                                <a id="btnCancelar" href="#" class="ui-btn ui-btn-inline btnModal">CANCELAR</a>
+                <!----------------------------------- PAGINA dashboard ---------------------------------->
+                <section data-role="page" id="dashboard" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
 
-                                <!-- <button id="guardarBtn" class="ui-btn ui-corner-all ui-shadow ui-btn-b">GUARDAR</button>
-                                <button id="btnCancelar" class="ui-btn ui-corner-all ui-shadow ui-btn-b">CANCELAR</button> -->
-                            </div>
-                        </form>
-                    </div></div></section>
-                <!----------------------------------- PAGINA NUMBER PLAYERS ---------------------------------->
-
-                <!----------------------------------- PAGINA NAME PLAYERS ---------------------------------->
-                <section data-role="page" id="info" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
-
-                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
-                        <img src="img/cart_logo.png" class="fafafalogo">
-                        <h1 class="ui-title" role="heading" aria-level="1">PARKING</h1>
+                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="height: 13vh;">
+                        <img src="img/logocompletoblanco.png" class="app_logo" style="width: 30%;margin: 2%;float: left;">
                     </div><!-- /header -->
 
                     <div role="main" class="ui-content">
                         
-                        <div class="ui-grid-a" id="info_1">
-                          <div class="ui-block-a" style="">
-                            <div class="ui-bar ui-bar-a" style="font-size: inherit;height: 173px;line-height: 2.5;background: #373737;color: white;text-shadow: none;padding: 0;">
-                              <h1 style="font-size: 1rem;height: 25px;position: absolute;top: 0%;left: 25%;">
-                                <small>TU SECTOR</small>
-                              </h1>
-                              <h1 style="font-size: 3em;height: 25px;position: absolute;top: -4%;left: 25%;" id="sector_asignado">C2</h1>
-                              <h1 style="font-size: 1rem;height: 25px;position: absolute;top: 40%;left: 30%;">
-                                <small>PATENTE</small>
-                              </h1>
-                              <h1 style="font-size: 1.4em;height: 25px;position: absolute;top: 49%;left: 13px;" id="patente_sector_asignado">MMM-MMM</h1>
-                              <h1 style="font-size: 1rem;height: 25px;position: absolute;top: 68%;left: 25%;">
-                                <small>ENTRADA</small>
-                              </h1>
-                              <h1 style="font-size: 1em;height: 25px;position: absolute;top: 80%;left: 13px;" id="checkin_sector_asignado">06/07/22 19:06</h1>
+                        <div class="card transform">
+                            <div class="face">
+                                <img src="img/uploads/mora.png" style="width: 100%;height: 100%;">
                             </div>
-                          </div>
-                          <div class="ui-block-b">
-                            <div class="ui-bar ui-bar-a" style="height:160px">
-                              <div class="ui-grid-1">
-                                <div class="ui-block-a" style="width: 100%;">
-                                    <h1 style="font-size: 0.65rem;height: 25px;position: absolute;top: 10%;left: 15%;font-weight: 800;">
-                                        <smaller>TRANSCURRIDO</smaller>
-                                    </h1>
-                                    <h1 style="font-size: 0.8rem;height: 25px;position: absolute;top: 16%;left: 13px;" id="info_transcurrido">06/07/22 19:06</h1>
-                                    <h1 style="font-size: 0.75rem;height: 25px;position: absolute;top: 34%;left: 32%;font-weight: 800;">
-                                        <small>SALIDA</small>
-                                    </h1>
-                                    <h1 style="font-size: 1em;height: 25px;position: absolute;top: 40%;left: 13px;">06/07/22 19:06</h1>
-                                </div>
-                                <div class="ui-block-b" style="width: 100%;">
-                                  <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-top" style="width: 63%;left: 3%;position: absolute;top: 49%;">SALIR</a>
-                                </div>
-                              </div>
-                              <!-- /grid-b -->
+                            <div id="containText">
+                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
+                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
                             </div>
-                          </div>
+                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
+                        </div>       
+
+                        <div class="card transform">
+                            <div class="face">
+                                <img src="img/uploads/corchito.jpg" style="width: 100%;height: 100%;">
+                            </div>
+                            <div id="containText">
+                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
+                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
+                            </div>
+                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
                         </div>
-                        <div id="sectores">
-                            
-                        </div>
+
+                        
                     </div><!-- /content -->
 
                     <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
                         <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
                     </div> -->
                 </section>
-                <!----------------------------------- PAGINA NAME PLAYERS ---------------------------------->
+                <!----------------------------------- PAGINA dashboard ---------------------------------->
+
+                <!----------------------------------- PAGINA reset ---------------------------------->
+                <section data-role="page" id="reset" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+
+                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="height: 13vh;">
+                        <img src="img/logocompletoblanco.png" class="app_logo" style="width: 30%;margin: 2%;float: left;">
+                    </div><!-- /header -->
+
+                    <div role="main" class="ui-content">
+                        
+                        <div class="card transform">
+                            <div class="face">
+                                <img src="img/uploads/mora.png" style="width: 100%;height: 100%;">
+                            </div>
+                            <div id="containText">
+                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
+                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
+                            </div>
+                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
+                        </div>       
+
+                        <div class="card transform">
+                            <div class="face">
+                                <img src="img/uploads/corchito.jpg" style="width: 100%;height: 100%;">
+                            </div>
+                            <div id="containText">
+                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
+                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
+                            </div>
+                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
+                        </div>
+
+                        
+                    </div><!-- /content -->
+
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                </section>
+                <!----------------------------------- PAGINA reset ---------------------------------->
                 
-
-                <!----------------------------------- PAGINA SORTEO PLAYERS ---------------------------------->
-                <section data-role="page" id="three" data-url="three" tabindex="2" class="ui-page ui-page-theme-a" style="min-height: 667px;">
-
-                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
-                        <img src="img/cart_logo.png" class="fafafalogo">
-                        <h1 class="ui-title" role="heading" aria-level="1">PARKING</h1>
-                    </div><!-- /header -->
-
-                    <div role="main" class="ui-content">
-                        <h3>Listas de Productos: <span id="listName"></span></h3>
-
-                        <form class="ui-filterable">
-                            <input id="filterBasic-inputTHREE" data-type="search">
-                        </form>
-                        <ul data-role="listview" data-filter="true" data-input="#filterBasic-inputTHREE" id="listaProducts" style="padding: 2%;">
-
-                        </ul>
-                        
-                        <!-- <p><a id="btn3" href="#three" class="ui-btn ui-shadow ui-corner-all">SIGUIENTE</a></p> -->
-
-                    </div><!-- /content -->
-
-                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
-                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
-                    </div> -->
-                </section>
-                <!----------------------------------- PAGINA SORTEO PLAYERS ---------------------------------->
-                <!-- ///////////////////////////////////////////////////////////////// -->
             </div>
         <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
