@@ -144,53 +144,30 @@
                 <!-- ///////////////////////////////////////////////////////////////// -->
                 <section id="loading" class="loading">
                     <div class="ui-grid-b">
-    <!--                         <div class="ui-block-a faColLoading marginLoading" class="faLoading">
-                                <div class="animated fadeIn delay-1s">FA </div>
-                            </div>
-                            <div class="ui-block-b faColLoading" class="faLoading">
-                                <div class="animated fadeIn delay-2s">FA </div>
-                            </div>
-                            <div class="ui-block-c faColLoading" class="faLoading">
-                                <div class="animated fadeIn delay-3s">FA </div>
-                            </div> -->
-                        <img class="animated bounceInDown fafafaIntro" src="img/cardon_parking.png"><br><br>
-                        <div class="cargando animated infinite fadeIn delay-4s animated">CARGANDO...</div>  
+                        <img class="animated bounceInDown fafafaIntro" src="img/logocompletoblanco.png" stlye="width: 75%;" style="width: 65%;margin: 0 18%!important;display: block !important;"><br><br>
+                        <!-- <div class="cargando animated infinite fadeIn delay-4s animated">CARGANDO...</div> -->  
                     </div>
                 </section>
                 <!--------------------------------------- PAGINA INTRO --------------------------------------->
                 <section data-role="page" id="intro_1" style="min-height: 640px;background-color: #FFCC01;">
-                    <img class="animated bounceInDown fafafaIntro" src="img/banner.png">        
+                    <img class="animated infinite pulse fafafaIntro" src="img/banner.png">        
                     <p><a href="#one" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" style="position: relative !important;">INICIAR</a></p>
 
                 </section>
                 <!--------------------------------------- PAGINA INTRO --------------------------------------->
 
                 <!----------------------------------- PAGINA NUMBER PLAYERS ---------------------------------->
-                <section data-role="page" id="checkin" data-url="checkin" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
-
-                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
-                        <img src="img/cart_logo.png" class="fafafalogo">
-                        <!-- <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn-left ui-btn ui-btn-a ui-icon-user ui-btn-icon-right ui-btn-inline ui-shadow ui-corner-all" data-transition="pop" aria-haspopup="true" aria-owns="popupLogin" aria-expanded="false" data-role="button" role="button">Sign in</a> -->
-                        <h1 class="ui-title" role="heading" aria-level="1">QR Parking</h1>
-
-                    </div><!-- /header -->
+                <section data-role="page" id="login" data-url="login" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
 
                     <div role="main" class="ui-content">
-                        <p>
-                            <img class="" src="img/banner.png" style="width: 91%;margin: 5% 0;">
-                            INGRESA TU PATENTE Y TU WHTASAPP, TE ENVIAREMOS INFORMACION POR WHATSAPP O EMAIL
-                        </p>
-                        <input type="text" id="text-patente" value="" placeholder="Ingresar Patente">
-                        <br><br>
-                        <input type="text" id="text-whatsapp" value="" placeholder="Ingresar Whatsapp">
+                        <img class="" src="img/user_app.png" style="width: 45%;margin: 40% 0 5% 25%;">
+                        <h3 style="margin: 0 0 5%;text-align: center;">INGRESAR</h3>
+                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
+                        <input type="text" id="text-pass" value="" placeholder="Clave">
+                        <a href="#" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" onclick="$('#text-usuario').val() != '' && $('#text-pass').val() ? setPatenteWhatsapp() : alert('Ambos campos son obligatorios.')">INICIAR</a>
+                    </div>
 
-                        <p><a href="#" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" onclick="$('#text-patente').val() != '' && $('#text-whatsapp').val() ? setPatenteWhatsapp() : alert('Ambos campos son obligatorios.')">INICIAR</a></p>
-                    </div><!-- /content -->
-
-                    <div style="display: none;" id="popupLogin-placeholder"><!-- placeholder for popupLogin --></div>
-                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
-                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
-                    </div> -->
+                    f
                 <div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="popupLogin-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="popupLogin-popup"><div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
                         <form>
                             <div style="padding:10px 20px;">

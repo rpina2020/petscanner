@@ -36,7 +36,11 @@
     font-size: 30px;
     color: #fff;
     position: fixed;
-    background: #edc65d;
+    background-color: #f7f7f7;
+    background-image: url(../img/background_transparent.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 .show{
     opacity: 1;
@@ -221,3 +225,10 @@ td[status='occupied']{
     color: red !important;        
 }
 /*-------------------parking-------------------*/
+
+#login {
+    background-image: url(../img/background_transparent.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
