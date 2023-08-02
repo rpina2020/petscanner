@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+       <!--  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>ParkingAPP</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/mod.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <style type="text/css">
+            a.ui-btn-icon-notext.ui-corner-all {
+                float: left; 
+                margin: 0 7%;
+                background: #edc65d;
+            }  
+            .ui-dialog-contain {
+                width: 92.5%;
+                max-width: 500px;
+                margin: 10% auto 15px auto;
+                padding: 0;
+                position: relative;
+                top: -15px;
+            }
+            div#popupLogin {
+                height: auto;
+                display: inline-block;
+                padding-bottom: 5%;
+            }
+
+            button.ui-btn.ui-btn-b.ui-shadow.ui-corner-all {
+                width: 47%;
+                font-size: x-small;
+                float: left;
+            }
+
+            button.ui-btn.ui-btn-b.ui-shadow.ui-corner-all {
+                width: 47%;
+                font-size: x-small;
+                margin: 0 0 0 3%;
+                float: left;
+            }
+
+            .btnContainer{
+                width: 100%;
+                height: 30px;
+            }
+
+            .btnModal {
+                width: 35%;
+                font-size: x-small;
+                float: left;
+                padding: 5%;
+            }
+            .codeQR{
+                width: 100%;
+                margin: 4% 0;        
+            }
+            .tituloLista {
+                font-size: x-large;
+                width: 60%;
+                float: left;
+                margin: 5%;
+            }
+            .divIcons{
+                width: 63%;
+                float: left;
+                margin-right: 22%;
+            }
+            #two .card {
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              transition: 0.3s;
+              width: 100%;
+              border-radius: 5px;
+              margin-bottom: 10%;
+            }
+
+            #two .card:hover {
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+
+            #two img {
+              border-radius: 5px 5px 0 0;
+            }
+
+            #two .container {
+                padding: 2px 16px;
+                height: 67vh;
+            }
+
+            .botonera{
+                width: 65%;
+                height: 30px;
+                margin: 0 auto;
+            }
+            #two .card .container h4 {
+                margin-top: 0;
+                margin-bottom: 5%;
+            }
+            #listaProducts li {
+                font-size: xx-small;
+            }
+            .ui-grid-b div {
+                text-align: center;
+                font-size: xx-large;
+                line-height: 2.5;
+            }
+        </style>
+
+    </head>
+    <body>
+            <div id="deviceready">
+                <!-- ///////////////////////////////////////////////////////////////// -->
+                <section id="loading" class="loading">
+                    <div class="ui-grid-b">
+    <!--                         <div class="ui-block-a faColLoading marginLoading" class="faLoading">
+                                <div class="animated fadeIn delay-1s">FA </div>
+                            </div>
+                            <div class="ui-block-b faColLoading" class="faLoading">
+                                <div class="animated fadeIn delay-2s">FA </div>
+                            </div>
+                            <div class="ui-block-c faColLoading" class="faLoading">
+                                <div class="animated fadeIn delay-3s">FA </div>
+                            </div> -->
+                        <img class="animated bounceInDown fafafaIntro" src="img/cardon_parking.png"><br><br>
+                        <div class="cargando animated infinite fadeIn delay-4s animated">CARGANDO...</div>  
+                    </div>
+                </section>
+                <!--------------------------------------- PAGINA INTRO --------------------------------------->
+                <section data-role="page" id="intro_1" style="min-height: 640px;background-color: #FFCC01;">
+                    <img class="animated bounceInDown fafafaIntro" src="img/banner.png">        
+                    <p><a href="#one" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" style="position: relative !important;">INICIAR</a></p>
+
+                </section>
+                <!--------------------------------------- PAGINA INTRO --------------------------------------->
+
+                <!----------------------------------- PAGINA NUMBER PLAYERS ---------------------------------->
+                <section data-role="page" id="checkin" data-url="checkin" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
+
+                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                        <img src="img/cart_logo.png" class="fafafalogo">
+                        <!-- <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn-left ui-btn ui-btn-a ui-icon-user ui-btn-icon-right ui-btn-inline ui-shadow ui-corner-all" data-transition="pop" aria-haspopup="true" aria-owns="popupLogin" aria-expanded="false" data-role="button" role="button">Sign in</a> -->
+                        <h1 class="ui-title" role="heading" aria-level="1">QR Parking</h1>
+
+                    </div><!-- /header -->
+
+                    <div role="main" class="ui-content">
+                        <p>
+                            <img class="" src="img/banner.png" style="width: 91%;margin: 5% 0;">
+                            INGRESA TU PATENTE Y TU WHTASAPP, TE ENVIAREMOS INFORMACION POR WHATSAPP O EMAIL
+                        </p>
+                        <input type="text" id="text-patente" value="" placeholder="Ingresar Patente">
+                        <br><br>
+                        <input type="text" id="text-whatsapp" value="" placeholder="Ingresar Whatsapp">
+
+                        <p><a href="#" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all fafafaBtnIntro btnSiguiente" onclick="$('#text-patente').val() != '' && $('#text-whatsapp').val() ? setPatenteWhatsapp() : alert('Ambos campos son obligatorios.')">INICIAR</a></p>
+                    </div><!-- /content -->
+
+                    <div style="display: none;" id="popupLogin-placeholder"><!-- placeholder for popupLogin --></div>
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                <div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="popupLogin-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="popupLogin-popup"><div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all ui-popup ui-body-a ui-overlay-shadow">
+                        <form>
+                            <div style="padding:10px 20px;">
+                                <h3>Datos de Producto</h3>
+                                
+                                <label for="productId" class="ui-hidden-accessible">ID:</label>
+                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productId" value="" placeholder="ID de Producto" data-theme="a"></div>
+                                
+                                <label for="productCODE" class="ui-hidden-accessible">CODE:</label>
+                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productCODE" value="" placeholder="CODE de Producto" data-theme="a"></div>                                
+                                
+                                <label for="productName" class="ui-hidden-accessible">NOMBRE:</label>
+                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productName" value="" placeholder="NOMBRE de Producto" data-theme="a"></div>
+                                
+                                <label for="productPRECIO" class="ui-hidden-accessible">PRECIO:</label>
+                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="number" name="user" id="productPRECIO" value="" placeholder="PRECIO de Producto" data-theme="a"></div>
+
+                                <label for="productTypeCODE" class="ui-hidden-accessible">TIPO CODE:</label>
+                                <div class="ui-input-text ui-body-a ui-corner-all ui-shadow-inset"><input type="text" name="user" id="productTypeCODE" value="" placeholder="TIPO CODE de Producto" data-theme="a"></div>
+                                
+                                <a id="guardarBtn" href="#" class="ui-btn ui-btn-inline btnModal">GUARDAR</a>
+                                <a id="btnCancelar" href="#" class="ui-btn ui-btn-inline btnModal">CANCELAR</a>
+
+                                <!-- <button id="guardarBtn" class="ui-btn ui-corner-all ui-shadow ui-btn-b">GUARDAR</button>
+                                <button id="btnCancelar" class="ui-btn ui-corner-all ui-shadow ui-btn-b">CANCELAR</button> -->
+                            </div>
+                        </form>
+                    </div></div></section>
+                <!----------------------------------- PAGINA NUMBER PLAYERS ---------------------------------->
+
+                <!----------------------------------- PAGINA NAME PLAYERS ---------------------------------->
+                <section data-role="page" id="info" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+
+                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                        <img src="img/cart_logo.png" class="fafafalogo">
+                        <h1 class="ui-title" role="heading" aria-level="1">PARKING</h1>
+                    </div><!-- /header -->
+
+                    <div role="main" class="ui-content">
+                        
+                        <div class="ui-grid-a" id="info_1">
+                          <div class="ui-block-a" style="">
+                            <div class="ui-bar ui-bar-a" style="font-size: inherit;height: 173px;line-height: 2.5;background: #373737;color: white;text-shadow: none;padding: 0;">
+                              <h1 style="font-size: 1rem;height: 25px;position: absolute;top: 0%;left: 25%;">
+                                <small>TU SECTOR</small>
+                              </h1>
+                              <h1 style="font-size: 3em;height: 25px;position: absolute;top: -4%;left: 25%;" id="sector_asignado">C2</h1>
+                              <h1 style="font-size: 1rem;height: 25px;position: absolute;top: 40%;left: 30%;">
+                                <small>PATENTE</small>
+                              </h1>
+                              <h1 style="font-size: 1.4em;height: 25px;position: absolute;top: 49%;left: 13px;" id="patente_sector_asignado">MMM-MMM</h1>
+                              <h1 style="font-size: 1rem;height: 25px;position: absolute;top: 68%;left: 25%;">
+                                <small>ENTRADA</small>
+                              </h1>
+                              <h1 style="font-size: 1em;height: 25px;position: absolute;top: 80%;left: 13px;" id="checkin_sector_asignado">06/07/22 19:06</h1>
+                            </div>
+                          </div>
+                          <div class="ui-block-b">
+                            <div class="ui-bar ui-bar-a" style="height:160px">
+                              <div class="ui-grid-1">
+                                <div class="ui-block-a" style="width: 100%;">
+                                    <h1 style="font-size: 0.65rem;height: 25px;position: absolute;top: 10%;left: 15%;font-weight: 800;">
+                                        <smaller>TRANSCURRIDO</smaller>
+                                    </h1>
+                                    <h1 style="font-size: 0.8rem;height: 25px;position: absolute;top: 16%;left: 13px;" id="info_transcurrido">06/07/22 19:06</h1>
+                                    <h1 style="font-size: 0.75rem;height: 25px;position: absolute;top: 34%;left: 32%;font-weight: 800;">
+                                        <small>SALIDA</small>
+                                    </h1>
+                                    <h1 style="font-size: 1em;height: 25px;position: absolute;top: 40%;left: 13px;">06/07/22 19:06</h1>
+                                </div>
+                                <div class="ui-block-b" style="width: 100%;">
+                                  <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-top" style="width: 63%;left: 3%;position: absolute;top: 49%;">SALIR</a>
+                                </div>
+                              </div>
+                              <!-- /grid-b -->
+                            </div>
+                          </div>
+                        </div>
+                        <div id="sectores">
+                            
+                        </div>
+                    </div><!-- /content -->
+
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                </section>
+                <!----------------------------------- PAGINA NAME PLAYERS ---------------------------------->
+                
+
+                <!----------------------------------- PAGINA SORTEO PLAYERS ---------------------------------->
+                <section data-role="page" id="three" data-url="three" tabindex="2" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+
+                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+                        <img src="img/cart_logo.png" class="fafafalogo">
+                        <h1 class="ui-title" role="heading" aria-level="1">PARKING</h1>
+                    </div><!-- /header -->
+
+                    <div role="main" class="ui-content">
+                        <h3>Listas de Productos: <span id="listName"></span></h3>
+
+                        <form class="ui-filterable">
+                            <input id="filterBasic-inputTHREE" data-type="search">
+                        </form>
+                        <ul data-role="listview" data-filter="true" data-input="#filterBasic-inputTHREE" id="listaProducts" style="padding: 2%;">
+
+                        </ul>
+                        
+                        <!-- <p><a id="btn3" href="#three" class="ui-btn ui-shadow ui-corner-all">SIGUIENTE</a></p> -->
+
+                    </div><!-- /content -->
+
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                </section>
+                <!----------------------------------- PAGINA SORTEO PLAYERS ---------------------------------->
+                <!-- ///////////////////////////////////////////////////////////////// -->
+            </div>
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <script type="text/javascript" src="js/parking.js"></script>
+    </body>
+</html>

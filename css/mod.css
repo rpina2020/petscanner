@@ -1,0 +1,223 @@
+.fafafaIntro {
+    width: 100%;
+    top: 37%;
+    margin: 0 auto;
+    display: block;
+    position: absolute !important;
+}
+.faColLoading{
+    width: 20.333% !important;
+}
+.marginLoading {
+    margin-left: 20%;
+}
+.cargando{
+    position: absolute;
+    margin-top: 15%;
+    top: 43%;
+    left: 18%;
+}
+.faLoading{
+    text-align: right;
+    margin-left: 21%;
+}
+.fafafaBtnIntro {
+    width: 50%;
+    position: absolute;
+    top: 57%;
+    left: 22%;
+}
+.loading{
+    width: 100%;
+    height: 100vh !important;
+    z-index: 1000;
+    text-align: center;
+    line-height: 22;
+    font-size: 30px;
+    color: #fff;
+    position: fixed;
+    background: #edc65d;
+}
+.show{
+    opacity: 1;
+    display: block;
+}
+.hide{
+    opacity: 0;
+    display: none;
+}
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+    background-color: #edc65d;
+    border-color: #edc65d;
+    color: #39568e;
+    /* text-shadow: 0 1px 0 #eee; */
+    font-weight: 700;
+    /* position: fixed; */
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+    font-size: 1em;
+    min-height: 1.1em;
+    display: block;
+    margin: 6% 26%;
+    padding: .7em 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0!important;
+    text-align: left;
+    background-color: #fff;
+    color: #8cd4e1;
+    background: transparent;
+}
+.ui-content {
+    width: 92%;
+    height: 79vh;
+    /* margin-top: 26%; */
+}
+.ui-slider-track.ui-shadow-inset.ui-bar-inherit.ui-corner-all {
+    width: 85vw !important;
+    margin: 5% 3%;
+    position: relative;
+}
+.numberPlayers {
+    width: 96% !important;
+    height: 60px !important;
+    float: none !important;
+    font-size: -webkit-xxx-large !important;
+    border-radius: 0;
+    text-shadow: none !important;
+    box-shadow: none;
+}
+.ui-slider {
+    width: 100% !important;
+    height: 70px !important;
+}
+#one > div.ui-content > p:nth-child(5) > a {
+    /* margin: 20% 0 0 3%; */
+}
+.fafafalogo{
+    width: 20%;
+    float: left;
+    margin: 3%;
+}
+.ui-footer.ui-bar-a {
+    bottom: 0%;
+    position: fixed;
+    width: 100%;
+}
+#two .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+    width: 85% !important;
+    float: left;
+}
+.addPlayer {
+    float: left;
+    margin-left: 3%;
+}
+#btn3 {
+    width: 90%;
+}
+.ui-content .ui-listview, .ui-panel-inner>.ui-listview {
+    margin: 1em 0;
+}
+ul#players {
+    float: left;
+    width: 100%; ;
+}
+label#slider-fill-label {
+    font-size: small;
+}
+.btnSiguiente{
+    color: #ffffff !important;
+    background-color: #4a4948 !important;
+    border: none;
+    text-shadow: none !important;
+}
+p.siguiente {
+    position: fixed;
+    width: 89%;
+    bottom: 0%;
+}
+.texto{
+    font-size: small;
+}
+h3 {
+    color: #395590;
+}
+.ui-title {
+    color: #3a5591 !important;
+    text-shadow: none;
+    font-weight: bold;
+}
+.ui-title2 {
+    font-size: x-small !important;
+    float: right !important;
+    margin: -4em 32% !important;
+}
+.labelteam{
+    background-color: #edc65d;
+    border-color: #edc65d;
+    color: #39568e;
+    font-weight: 600 !important;
+    padding: 2%;
+    text-shadow: none;
+}
+
+/*-------------------parking-------------------*/
+.cargando.animated.infinite.fadeIn.delay-4s.animated {
+    margin: 0 auto;
+    display: block;
+    width: 65%;
+    line-height: 10;
+}
+#checkin p {
+    position: relative;
+}
+#checkin input[type="text"] {
+    margin-top: 1%;
+    width: 95%;
+    height: 30px;
+}
+#info_1 h1 {
+    font-size: 1rem;
+    left: 0% !important;
+    width: 100%;
+    text-align: center !important;
+    font-weight: 700;
+}
+table {
+    width: 92vw;
+    background: #312F31 !important;
+    margin: 5% 0;
+    border-style: none !important!;
+    padding: 8% 4% 0%;
+}
+
+table td{
+    text-align: center;
+    font-weight: 700;
+    color: #fff !important;
+    background: #312F31 !important;
+    margin: 5% 0;
+    padding: 10% 0;
+    font-size: xx-large;
+    border-top: solid #edc65d 4px;
+    border-left: solid #fff 2px;
+    border-right: solid #fff 2px;
+    width: 33em !important;
+}
+
+table tr {
+    widwth: 100% !important;
+        margin-bottom: 10% !important;
+    display: block;
+}
+
+
+td[status='free']{
+    color: #edc65d !important;
+    text-shadow: none;   
+}
+td[status='occupied']{
+    color: red !important;        
+}
+/*-------------------parking-------------------*/
