@@ -154,15 +154,16 @@
 
                     <div role="main" class="ui-content">
                         <img class="" src="img/user_app.png" style="width: 45%;margin: 40% 0 5% 25%;">
-                        <h3 style="margin: 0 0 5%;text-align: center;">INGRESAR</h3>
+                        <h3 style="margin: 0 0 5%;text-align: center;color: indigo;">INGRESAR</h3>
                         <input type="text" id="text-usuario" value="" placeholder="Usuario">
                         <input type="text" id="text-pass" value="" placeholder="Clave">
                         <div class="" style="margin: 3% !important;">
-                            <a href="" style="margin: 0 0 5%;text-align: center;float: left;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">OLVIDE MI CONSTRASEÑA
+                            <a href="#reset" style="margin: 0 0 5%;text-align: center;float: left;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">OLVIDE MI CONSTRASEÑA
                             </a>
-                            <a href="" style="margin: 0 0 5%;text-align: center;float: right;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">REGISTRARSE
+                            <a href="#registro" style="margin: 0 0 5%;text-align: center;float: right;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">REGISTRARSE
                             </a>
-                            <a href="#info" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">INICIAR</a>
+                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">INICIAR</a>
+                            <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
                     </div>
 
@@ -173,81 +174,136 @@
                 <section data-role="page" id="dashboard" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
 
                     <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="height: 13vh;">
-                        <img src="img/logocompletoblanco.png" class="app_logo" style="width: 30%;margin: 2%;float: left;">
+                        <img src="img/logocompletoblanco.png" class="app_logo">
                     </div><!-- /header -->
 
                     <div role="main" class="ui-content">
                         
                         <div class="card transform">
                             <div class="face">
-                                <img src="img/uploads/mora.png" style="width: 100%;height: 100%;">
+                                <img src="img/uploads/mora.png" style="width: 26vw;height: 17vh;">
                             </div>
                             <div id="containText">
-                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
-                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
+                                <h3 style="margin: 5% 0 0 12%;width: 81%;">Mora</h3>
+                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Ramiro Pina (DEVICE #1).</p>
                             </div>
-                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
+                            <p style="text-transform: none;font-size: small;float: right;margin-top: 0;margin: -1% 0 0 12%;width: 62%;">Hembra. Cruza con ovejero. 4 años. Tolosa.</p>
+                            <div style="width: 63%;float: right;">
+                                <a href="#" class="ui-btn ui-icon-location ui-btn-icon-notext" style="float: left;margin: 3% 0 0 0;">Icon only</a>
+                                <a href="#" class="ui-btn ui-icon-alert ui-btn-icon-notext" style="float: left;margin: 3% 0 0 5%;">Icon only</a>
+                                <a href="#" class="ui-btn ui-icon-user ui-btn-icon-notext" style="float: left;margin: 3% 0 0 5%;">Icon only</a>
+                            </div>
                         </div>       
 
                         <div class="card transform">
                             <div class="face">
-                                <img src="img/uploads/corchito.jpg" style="width: 100%;height: 100%;">
+                                <img src="img/uploads/corchito.jpg" style="width: 26vw;height: 17vh;">
                             </div>
                             <div id="containText">
                                 <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
                                 <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
                             </div>
-                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
+                            <p style="text-transform: none;font-size: small;float: right;margin-top: 0;margin: -1% 0 0 12%;width: 62%;">Macho. Labrador. 2 años. La Plata.</p>
+                            <div style="width: 63%;float: right;">
+                                <a href="#" class="ui-btn ui-icon-location ui-btn-icon-notext" style="float: left;margin: 3% 0 0 0;">Icon only</a>
+                                <a href="#" class="ui-btn ui-icon-alert ui-btn-icon-notext" style="float: left;margin: 3% 0 0 5%;">Icon only</a>
+                                <a href="#" class="ui-btn ui-icon-user ui-btn-icon-notext" style="float: left;margin: 3% 0 0 5%;">Icon only</a>
+                            </div>
                         </div>
 
-                        
                     </div><!-- /content -->
 
-                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
-                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
-                    </div> -->
                 </section>
                 <!----------------------------------- PAGINA dashboard ---------------------------------->
 
                 <!----------------------------------- PAGINA reset ---------------------------------->
-                <section data-role="page" id="reset" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
-
-                    <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="height: 13vh;">
-                        <img src="img/logocompletoblanco.png" class="app_logo" style="width: 30%;margin: 2%;float: left;">
-                    </div><!-- /header -->
+                <section data-role="page" id="reset" data-url="reset" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
 
                     <div role="main" class="ui-content">
-                        
-                        <div class="card transform">
-                            <div class="face">
-                                <img src="img/uploads/mora.png" style="width: 100%;height: 100%;">
-                            </div>
-                            <div id="containText">
-                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
-                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
-                            </div>
-                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
-                        </div>       
-
-                        <div class="card transform">
-                            <div class="face">
-                                <img src="img/uploads/corchito.jpg" style="width: 100%;height: 100%;">
-                            </div>
-                            <div id="containText">
-                                <h3 style="margin: 5% 0 0 12%;width: 81%;">HI! I am a card.</h3>
-                                <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Click me to trigger the animation.</p>
-                            </div>
-                            <p style="font-size: small;float: right;margin-top: 0;margin: 0% 0 0 12%;width: 63%;">Here is some extra info about the items on this card, such as stuff.</p>
+                        <img class="" src="img/resetpass.png" style="width: 30%;margin: 40% 0 5% 32%;">
+                        <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">RESTABLECER CLAVE</h3>
+                        <p style="text-transform: initial;color: #818080;">
+                            Ingresa tu emaily te enviaremos un enlace para restablecer tu clave.
+                        </p>
+                        <input type="text" id="text-email" value="" placeholder="Email">
+                        <input type="text" id="text-codigo" value="" placeholder="Codigo">
+                        <div class="" style="margin: 3% !important;">
+                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">RESTABLECER</a>
+                            <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
-
-                        
-                    </div><!-- /content -->
+                    </div>
 
                     <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
                         <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
                     </div> -->
                 </section>
                 <!----------------------------------- PAGINA reset ---------------------------------->
+
+                <!----------------------------------- PAGINA registro ---------------------------------->
+                <section data-role="page" id="registro" data-url="registro" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+
+                    <div role="main" class="ui-content">
+                        <img class="" src="img/user_app.png" style="width: 45%;margin: 10% 0 5% 25%;">
+                        <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">CREAR CUENTA</h3>
+                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
+                        <input type="text" id="text-pass" value="" placeholder="Email">
+                        <input type="text" id="text-pass" value="" placeholder="Clave">
+                        <input type="text" id="text-pass" value="" placeholder="Repetir Clave">
+                        <div class="" style="margin: 3% !important;">
+                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
+                            <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                </section>
+                <!----------------------------------- PAGINA registro ---------------------------------->
+
+                <!----------------------------------- PAGINA pet_profile ---------------------------------->
+                <section data-role="page" id="pet_profile" data-url="pet_profile" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+
+                    <div role="main" class="ui-content">
+                        <img class="" src="img/user_app.png" style="width: 45%;margin: 10% 0 5% 25%;">
+                        <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">CREAR CUENTA</h3>
+                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
+                        <input type="text" id="text-pass" value="" placeholder="Email">
+                        <input type="text" id="text-pass" value="" placeholder="Clave">
+                        <input type="text" id="text-pass" value="" placeholder="Repetir Clave">
+                        <div class="" style="margin: 3% !important;">
+                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
+                            <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                </section>
+                <!----------------------------------- PAGINA registro ---------------------------------->
+
+                <!----------------------------------- PAGINA own_profile ---------------------------------->
+                <section data-role="page" id="own_profile" data-url="own_profile" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+
+                    <div role="main" class="ui-content">
+                        <img class="" src="img/user_app.png" style="width: 45%;margin: 10% 0 5% 25%;">
+                        <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">CREAR CUENTA</h3>
+                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
+                        <input type="text" id="text-pass" value="" placeholder="Email">
+                        <input type="text" id="text-pass" value="" placeholder="Clave">
+                        <input type="text" id="text-pass" value="" placeholder="Repetir Clave">
+                        <div class="" style="margin: 3% !important;">
+                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
+                            <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
+                        </div>
+                    </div>
+
+                    <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+                        <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
+                    </div> -->
+                </section>
+                <!----------------------------------- PAGINA registro ---------------------------------->
                 
             </div>
         <!-- <script type="text/javascript" src="cordova.js"></script> -->

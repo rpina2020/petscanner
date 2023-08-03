@@ -51,12 +51,10 @@
     display: none;
 }
 .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
-    background-color: #edc65d;
-    border-color: #edc65d;
+    background-color: indigo;
+    border-color: indigo;
     color: #39568e;
-    /* text-shadow: 0 1px 0 #eee; */
     font-weight: 700;
-    /* position: fixed; */
 }
 .ui-header .ui-title, .ui-footer .ui-title {
     font-size: 1em;
@@ -100,9 +98,9 @@
     /* margin: 20% 0 0 3%; */
 }
 .app_logo{
-    width: 20%;
+    width: 30%;
+    margin: 2% 35%;
     float: left;
-    margin: 3%;
 }
 .ui-footer.ui-bar-a {
     bottom: 0%;
@@ -226,7 +224,7 @@ td[status='occupied']{
 }
 /*-------------------parking-------------------*/
 
-#login {
+#login, #reset, #registro, #dashboard {
     background-image: url(../img/background_transparent.png);
     background-size: contain;
     background-repeat: no-repeat;
