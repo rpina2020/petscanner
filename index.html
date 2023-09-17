@@ -145,7 +145,7 @@
                 <!-- ///////////////////////////////////////////////////////////////// -->
                 <section id="loading" class="loading">
                     <div class="ui-grid-b">
-                        <img class="animated bounceInDown fafafaIntro" src="img/logocompletoblanco.png" stlye="width: 75%;" style="width: 65%;margin: 0 18%!important;display: block !important;">
+                        <img class="animated infinite pulse loaderIntro" src="img/loaderqr.png" stlye="width: 75%;" style="width: 65%;margin: 0 18%!important;display: block !important;">
                     </div>
                 </section>
 
@@ -155,14 +155,14 @@
                     <div role="main" class="ui-content">
                         <img class="" src="img/user_app.png" style="width: 45%;margin: 40% 0 5% 25%;">
                         <h3 style="margin: 0 0 5%;text-align: center;color: indigo;">INGRESAR</h3>
-                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
-                        <input type="text" id="text-pass" value="" placeholder="Clave">
+                        <input type="text" id="text-usuario-login" value="" placeholder="Usuario">
+                        <input type="password" id="text-pass-login" value="" placeholder="Clave">
                         <div class="" style="margin: 3% !important;">
                             <a href="#reset" style="margin: 0 0 5%;text-align: center;float: left;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">RECUPERAR
                             </a>
                             <a href="#registro" style="margin: 0 0 5%;text-align: center;float: right;font-size: smaller;text-decoration: none;color: indigo;" class="ui-link">REGISTRARSE
                             </a>
-                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">INICIAR</a>
+                            <a href="#" id="btn_ingresar_login" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">INICIAR</a>
                             <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                 <section data-role="page" id="dashboard" data-url="info" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
 
                     <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="height: 13vh;">
-                        <img src="img/logocompletoblanco.png" class="app_logo">
+                        <img src="img/qr_completo.png" class="app_logo">
                     </div><!-- /header -->
 
                     <div role="main" class="ui-content">
@@ -225,10 +225,10 @@
                         <p style="text-transform: initial;color: #818080;">
                             Ingresa tu emaily te enviaremos un enlace para restablecer tu clave.
                         </p>
-                        <input type="text" id="text-email" value="" placeholder="Email">
-                        <input type="text" id="text-codigo" value="" placeholder="Codigo">
+                        <input type="text" id="text-email_reset" value="" placeholder="Email">
+                        <input type="text" id="text-codigo_reset" value="" placeholder="Codigo">
                         <div class="" style="margin: 3% !important;">
-                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">RESTABLECER</a>
+                            <a href="#dashboard" id="btn_checkin_ingresar_reset" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">RESTABLECER</a>
                             <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
                     </div>
@@ -243,14 +243,28 @@
                 <section data-role="page" id="registro" data-url="registro" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
 
                     <div role="main" class="ui-content">
-                        <img class="" src="img/user_app.png" style="width: 45%;margin: 10% 0 5% 25%;">
+                        <img class="" src="img/user_app.png" style="width: 20%;margin: 7% 0 5% 38%;">
                         <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">CREAR CUENTA</h3>
-                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
-                        <input type="text" id="text-pass" value="" placeholder="Email">
-                        <input type="text" id="text-pass" value="" placeholder="Clave">
-                        <input type="text" id="text-pass" value="" placeholder="Repetir Clave">
+                        <div class="wrapper">
+                            <form action="#">
+                              <input class="file-input" type="file" name="file" hidden="">
+                              <i class="fas fa-cloud-upload-alt"></i>
+                            </form>
+                            <section class="progress-area"></section>
+                            <section class="uploaded-area"></section>
+                          </div>
+                        <h3>Datos de cuenta</h3>
+                        <input type="text" id="text-usuario-registro" value="" placeholder="Usuario">
+                        <input type="text" id="text-email-registro" value="" placeholder="Email">
+                        <input type="text" id="text-clave-registro" value="" placeholder="Clave">
+                        <input type="text" id="text-repetir-registro" value="" placeholder="Repetir Clave">
+                        <h3>Datos Personales</h3>
+                        <input type="text" id="text-nombre-registro" value="" placeholder="nombre">
+                        <input type="text" id="text-apellido-registro" value="" placeholder="apellido">
+                        <input type="text" id="text-img-registro" value="" placeholder="Clave">
+
                         <div class="" style="margin: 3% !important;">
-                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
+                            <a href="#dashboard" id="btn_checkin_ingresar-registro" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
                             <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
                     </div>
@@ -263,20 +277,36 @@
 
                 <!----------------------------------- PAGINA pet_profile ---------------------------------->
                 <section data-role="page" id="pet_profile" data-url="pet_profile" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+                    
+                    <div id="map-canvas" style="height: 40vh;"></div>
 
-                    <div role="main" class="ui-content">
-                        <img class="" src="img/user_app.png" style="width: 45%;margin: 10% 0 5% 25%;">
-                        <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">CREAR CUENTA</h3>
-                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
-                        <input type="text" id="text-pass" value="" placeholder="Email">
-                        <input type="text" id="text-pass" value="" placeholder="Clave">
-                        <input type="text" id="text-pass" value="" placeholder="Repetir Clave">
-                        <div class="" style="margin: 3% !important;">
-                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
-                            <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
-                        </div>
+                    <div role="main" class="ui-content" id="pet_profile_content">
+                        <div class="ui-grid-b">
+                            <div class="ui-block-a" style="width: 20%;"><div class="ui-bar ui-bar-a" style="height:80px"></div></div>
+                            <div class="ui-block-b" style="width: 60%;"><div class="ui-bar ui-bar-a" style="height:80px"><img src="img/qr_completo.png" class="" style="width: 50%;"></div></div>
+                            <div class="ui-block-c" style="width: 20%;"><div class="ui-bar ui-bar-a" style="height:80px"></div></div>
+                        </div><!-- /grid-b -->
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+                        <h4>CHAT</h4>
+                        <ul data-role="listview" data-inset="false">
+                                <li>CHAT</li>
+                        </ul>
+                    </div>                    
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+                        <h4>CHAT</h4>
+                        <ul data-role="listview" data-inset="false">
+                                <li>CHAT</li>
+                        </ul>
+                    </div>                    
+                    <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+                        <h4>CHAT</h4>
+                        <ul data-role="listview" data-inset="false">
+                                <li>CHAT</li>
+                        </ul>
                     </div>
-
+                    </div>
+                    
+                    
                     <!-- <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
                         <h4 class="ui-title" role="heading" aria-level="1">Page Footer</h4>
                     </div> -->
@@ -289,12 +319,12 @@
                     <div role="main" class="ui-content">
                         <img class="" src="img/user_app.png" style="width: 45%;margin: 10% 0 5% 25%;">
                         <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">CREAR CUENTA</h3>
-                        <input type="text" id="text-usuario" value="" placeholder="Usuario">
-                        <input type="text" id="text-pass" value="" placeholder="Email">
-                        <input type="text" id="text-pass" value="" placeholder="Clave">
-                        <input type="text" id="text-pass" value="" placeholder="Repetir Clave">
+                        <input type="text" id="text-usuario-own_profile" value="" placeholder="Usuario">
+                        <input type="text" id="text-email-own_profile" value="" placeholder="Email">
+                        <input type="text" id="text-clave-own_profile" value="" placeholder="Clave">
+                        <input type="text" id="text-repetir-own_profile" value="" placeholder="Repetir Clave">
                         <div class="" style="margin: 3% !important;">
-                            <a href="#dashboard" id="btn_checkin_ingresar" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
+                            <a href="#dashboard" id="btn_checkin_ingresar_own_profile" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">CREAR</a>
                             <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
                     </div>
@@ -305,13 +335,35 @@
                 </section>
                 <!----------------------------------- PAGINA registro ---------------------------------->
                 
+                <!----------------------------------- PAGINA lost_pets ---------------------------------->
+                <section data-role="page" id="lost_pets" data-url="lost_pets" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
+                    
+                    <div id="map-lost_pets" style="height: 40vh;"></div>
+
+                    <form class="ui-filterable">
+                        <input id="filter-input-lost_pets" data-type="search">
+                    </form>
+                    
+                    <ul data-role="listview" data-filter="true" data-input="#filter-input-lost_pets" id="buscador">
+
+                    </ul>
+
+                </section>           
+
+
             </div>
+       
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD20NbC_oY66tVZU0yBKhyD8c4a6xHPkIQ"></script> <!-- API de Google Maps -->
+
         <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="js/moment.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
-        <script type="text/javascript" src="js/parking.js"></script>
+        <script type="text/javascript" src="js/sha256.min.js"></script>
+        <script src="js/uploader_script.js"></script> <!-- API de Google Maps -->
+        <script type="text/javascript" src="js/pets.js"></script>
+        <script type="text/javascript" src="js/petsModule.js"></script>
     </body>
 </html>
