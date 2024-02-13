@@ -8,6 +8,11 @@ $(window).on('hashchange', function() {
     ready()
 });
 function ready(){
+    setInterval(function () {
+        checkSession()
+    }, 60000);
+
+    
     var actualPage = location.hash.split("#")[1];
     switch (actualPage) { 
         case 'login': 

@@ -235,3 +235,33 @@ div#pet_profile_content {
     padding: 0%;
     width: 100%;
 }
+
+.appAlert{
+    width: 100vw;
+    background: #d9544f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    text-transform: math-auto;
+    color: #fff;
+    text-shadow: none;
+    font-size: medium;
+    padding: 2% 2% 0 2%;
+    display: none;
+}
+
+.redAlertCode{
+    margin: 2% 0;
+    text-align: center;
+    font-weight: 700;
+    width: 96%;
+    display: none;
+}
+
+.icon_left_alert{
+    width: 3px;
+    height: 50px;
+    display: block;
+    float: left;
+}

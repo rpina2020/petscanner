@@ -5,37 +5,83 @@ var wspetsUrl = ""; //URL Web Service usado por el modulo
 /* funciones básicas del módulo que son llamadas desde framework */
 petsModule.ready = function(){
 	//Esto se ejecutará cuando la página termine de cargar
-
+	checkSession()
+	showDevices()
 };
 
 petsModule.initLogin = function(){
+	
 	document.addEventListener("keyup", function(event) {
 	    if (event.keyCode === 13) {
-	        alert('Enter is pressed!');
+	        validateLogin()
 	    }
 	});
-	//Inicializa las opciones de menú
+	
 	$("#btn_ingresar_login").on("click", function() {
-		if(!checkSession()){
-		  	// Do something
-		    var txt_email = $("#text-usuario-login").val();
-		    var txt_pass = sha256($("#text-pass-login").val());
-			
-			checkUserLogin(txt_email,txt_pass);
-		}else{
+		validateLogin()
+	});	
 
-			console.log
-		}
-		
-
-
-
-	});
 };
 
 petsModule.initReset = function(){
 	//Inicializa las opciones de menú
-	console.log("initReset")
+	var url_act = location.href;
+	if (url_act) {}
+	$("#btn_validarmail_reset").on("click", function() {
+		var mail = $("#text-email_reset").val();
+		if (!mail.indexOf("@") != -1 && mail.indexOf(".com") != -1) {
+			$.ajax({
+				type: "GET",
+				async: false,
+				url: "http://localhost:3000/users",
+				data: {
+					email: mail
+				},
+				success: function(json) {
+					//petsModule.loginSuccess(json)
+					
+					if (json.length > 0 && json != undefined) {
+						showAlert('Te enviamos un enlace para restablecer tu contraseña a tu email. <div id="redAlertCode" class="redAlertCode"></div>',"success");
+						$("#text-email_reset").css("display", "none");
+						$("#btn_validarmail_reset").css("display", "none");
+						var txt_emailreset = $("#text-email_reset").val();
+						var txt_codereset = $("#text-codigo_reset").val();
+						
+						var code_reset = generarRandom(6);
+						localStorage.setItem('code_reset', JSON.stringify( [{"code_reset": true, "code_reset": code_reset}] ) )
+						$("#redAlertCode").text(code_reset);
+						$("#redAlertCode").css("display","block");
+						console.log(code_reset);
+						
+						sendMailNotification(txt_emailreset,code_reset);					
+
+						$("#text-codigo_reset").css("display", "block");
+						$("#btn_resetpass_reset").css("display", "block");
+
+						
+					}else{
+						showAlert('Este email no se encuentra registrado.',"error");
+					}
+				},
+				error: function(xhr, status, error) {
+				// Handle failed login.
+
+				}
+			});
+		}else{
+			showAlert('Debes ingresar un email real con un formato valido. Intenta de nuevo.',"error")
+		}
+	});	
+
+	$("#btn_resetpass_reset").on("click", function() {
+
+		
+		//if (!mail.indexOf("@") != -1 && mail.indexOf(".com") != -1) {
+
+		//}else{
+		//	alert("Debes ingresar un email real con un formato valido. Intenta de nuevo.")
+		//}
+	});
 
 };
 petsModule.initPetProfile = function(){
@@ -78,30 +124,31 @@ petsModule.initPetProfile = function(){
 	}
 
 };
-		function checkUserLogin(txt_email,txt_pass){
-			
-			if(txt_email != '' & txt_pass != ''){
-				$.ajax({
-					type: "GET",
-					url: " http://localhost:3000/users",
-					data: {
-						email: txt_email,
-						pass: txt_pass
-					},
-					success: function(json) {
-						petsModule.loginSuccess(json)
-						return true;
-					},
-					error: function(xhr, status, error) {
-					// Handle failed login.
 
-					}
-				});
-			}else{
-				alert("Ambos campos son obligatorios.")
+function checkUserLogin(txt_email,txt_pass){
+	
+	if(txt_email != '' & txt_pass != ''){
+		$.ajax({
+			type: "GET",
+			url: " http://localhost:3000/users",
+			data: {
+				email: txt_email,
+				pass: txt_pass
+			},
+			success: function(json) {
+				petsModule.loginSuccess(json)
+				return true;
+			},
+			error: function(xhr, status, error) {
+			// Handle failed login.
+
 			}
+		});
+	}else{
+		alert("Ambos campos son obligatorios.")
+	}
 
-		}
+}
 
 petsModule.initLostPetsMap = function(){
 	// If you're adding a number of markers, you may want to drop them on the map
@@ -246,9 +293,13 @@ petsModule.initHome = function(){
 };
 
 petsModule.loginSuccess = function(json){
+	console.log("loginSuccess")
 	//Si el logueo es correcto guarda los datos del usuario en la variable userFields 
 	var session = [{"session": true, "start_sessionTime": moment().format(), "dataUser": json}]
 	localStorage.setItem('session', JSON.stringify( session ) );
+	setInterval(function () {
+		console.log(checkSession(),"<---")
+	}, 30000);
 	$.mobile.navigate("#dashboard");
 
 };
@@ -278,6 +329,7 @@ function loginUser(user){
 
 function initReset(){
     alert("initReset")
+
 }
 function initRegistro(){
     var data = {
@@ -302,16 +354,37 @@ function checkSession(){
     
     var valor = JSON.parse( localStorage.getItem('session') )
     if (valor) {
+
     	var start_session = JSON.parse( localStorage.getItem('session'))[0].start_sessionTime
-		var lapsed_session_time = moment(start_session).startOf('minutes').fromNow().split(" minutes ago")[0]
-        if (parseInt(lapsed_session_time) > 1 ) {
-        	alert("tiempo caducado pasaron "+lapsed_session_time+" minutos")
+		var lapsed_session_time = moment(start_session).startOf('minutes').fromNow().split(" ")
+        var isNan = false;
+        for (var i = 0; i < lapsed_session_time.length; i++) {
+        	if(! isNaN(parseInt(lapsed_session_time[i])) ){
+        		lapsed_session_time = lapsed_session_time[i]
+        	}
         }
+        //alert(lapsed_session_time,"<-- lapsed_session_time")
+        if (parseInt(lapsed_session_time) > 1 ) {
+			localStorage.clear()
+			$.mobile.navigate("#login");
+        }
+
         return true;
     }else{
         return false;
     }
 
+}
+function validateLogin(){
+	if(!checkSession()){
+	    var txt_email = $("#text-usuario-login").val();
+	    var txt_pass = sha256($("#text-pass-login").val());		
+		if ( !checkUserLogin(txt_email,txt_pass) ){
+			$.mobile.navigate("#login");
+		}
+	}else{
+		$.mobile.navigate("#dashboard");
+	}
 }
 function initMapPage(){
 	(function() {
@@ -329,4 +402,92 @@ function ZoomAndCenter(location) {
 	location = [];
 }
 
+function showDevices(){
+
+
+var card = 	'<div class="card transform">\
+		        <div class="face">\
+		            <img src="img/uploads/mora.png" style="width: 26vw;height: 17vh;">\
+		        </div>\
+		        <div id="containText">\
+		            <h3 style="margin: 5% 0 0 12%;width: 81%;">Mora</h3>\
+		            <p style="font-size: 11px;margin: 5% 0 0 12%;width: 81%;">Ramiro Pina (DEVICE #1).</p>\
+		        </div>\
+		        <p style="text-transform: none;font-size: small;float: right;margin-top: 0;margin: -1% 0 0 12%;width: 62%;">Hembra. \
+		        Cruza con ovejero. 4 años. Tolosa.</p>\
+		        <div style="width: 63%;float: right;">\
+		            <a href="#" class="ui-btn ui-icon-location ui-btn-icon-notext" style="float: left;margin: 3% 0 0 0;">Icon only</a>\
+		            <a href="#" class="ui-btn ui-icon-alert ui-btn-icon-notext" style="float: left;margin: 3% 0 0 5%;">Icon only</a>\
+		            <a href="#" class="ui-btn ui-icon-user ui-btn-icon-notext" style="float: left;margin: 3% 0 0 5%;">Icon only</a>\
+		        </div>\
+		    </div>';
+	var id_user = localStorage.gettem('session', JSON.stringify( [{"session": true, "dataUser": json}] ) )
+	$.ajax({
+		type: "POST",
+		url: "http://localhost:3000/users",
+		data: {
+		  id_user: text_usuario_registro
+		},
+		success: function(response) {
+		  console.log(response);
+		},
+		error: function(error) {
+		  console.log(error);
+		}
+	});
+}
+
+function generarRandom(num) {
+  const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  const charactersLength = characters.length;
+  let result = "";
+    for (let i = 0; i < num; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+  	return result;
+}
+
+function showAlert(msg,type){
+	switch (type) { 
+		case 'success': 
+			color = "#5db75d";
+			break;
+		case 'warning': 
+			color = "#efad4d";
+			break;
+		case 'error': 
+			color = "#d9544f";	
+			break;
+		default:
+			alert('Nobody sucks!');
+	}
+	$("#appAlert").html(msg)
+	$("#appAlert").css("background-color",color)
+	$("#appAlert").fadeIn();
+}
+
+function sendMailNotification(txt_emailreset,code_reset){
+	$.ajax({
+		type: "post",
+		url: "https://estudioazor.com.ar/test/app_mail/sendMail.php",
+		data: {
+			email: txt_emailreset,
+			code_reset: code_reset
+		},
+		success: function(json) {
+			//petsModule.loginSuccess(json)
+			if (json.length > 0 && json != undefined) {
+				if (json[0].exito = "success") {
+					showAlert('Tu casilla de correo ha sido verificada con exito.',"success")
+				}
+			}else{
+				showAlert('Este email no se encuentra registrado.',"error")
+			}
+		},
+		error: function(xhr, status, error) {
+		// Handle failed login.
+
+		}
+	});
+}
 /* html específico del módulo */

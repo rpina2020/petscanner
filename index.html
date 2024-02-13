@@ -220,15 +220,26 @@
                 <section data-role="page" id="reset" data-url="reset" tabindex="1" class="ui-page ui-page-theme-a" style="min-height: 667px;">
 
                     <div role="main" class="ui-content">
+                        <div id="appAlert" class="appAlert">
+                            <i class="ui-btn-icon-left ui-icon-alert" class="icon_left_alert"></i>
+                            <p style="width: 92%;margin: 2%;font-size: small;">
+                                Debes ingresar un email real con un formato valido. Intenta de nuevo.
+                            </p>
+                        </div>
                         <img class="" src="img/resetpass.png" style="width: 30%;margin: 40% 0 5% 32%;">
                         <h3 style="margin: 0 0 5%;text-align: center; color: indigo;">RESTABLECER CLAVE</h3>
                         <p style="text-transform: initial;color: #818080;">
                             Ingresa tu emaily te enviaremos un enlace para restablecer tu clave.
                         </p>
+                        
                         <input type="text" id="text-email_reset" value="" placeholder="Email">
-                        <input type="text" id="text-codigo_reset" value="" placeholder="Codigo">
+                        <input type="text" id="text-codigo_reset" value="" placeholder="Codigo" style="display: none;">
+                        
                         <div class="" style="margin: 3% !important;">
-                            <a href="#dashboard" id="btn_checkin_ingresar_reset" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">RESTABLECER</a>
+                            <a href="#" id="btn_validarmail_reset" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important;">VALIDAR EMAIL</a>
+                            
+                            <a href="#" id="btn_resetpass_reset" class="animated fadeIn delay-1s ui-btn ui-shadow ui-corner-all app_BtnIntro btnSiguiente" style="width: 50%;margin: 0 auto;background-color: indigo !important; display: none">RESTABLECER</a>
+                        
                             <a href="#" onclick="history.back()" style="text-align: center;text-decoration: none;color: indigo;font-weight: 700 !important;font-size: small;"><h5>VOLVER</h5></a>
                         </div>
                     </div>
