@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1018922574186",
+    "firebase_url": "https://teckit-contenidos-eb38c.firebaseio.com",
+    "project_id": "teckit-contenidos-eb38c",
+    "storage_bucket": "teckit-contenidos-eb38c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018922574186:android:b223515a296bcdf6",
+        "android_client_info": {
+          "package_name": "com.redSapphire.teckitNewsModularizedTesting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018922574186-uusvi26b6nhavoc61on7621rphi6ebf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOs9_5u_v7AuvEEwV0eBsNExiFBqqLWAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

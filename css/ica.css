@@ -1,0 +1,463 @@
+body, section{
+    font-family: "Myriad Pro";
+    background-color: white !important;
+}
+
+footer{
+    background-color: #6DBB00 !important;
+}
+
+.ui-loader{
+    background-color: #6DBB00 !important;
+    color: #6DBB00 !Important;
+}
+
+.ui-loader .ui-icon-loading{
+    background-image: url("../img/gif_load.gif");
+}
+
+.app-logo{
+    width: 50%;
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
+
+.ui-icon-share:after {
+    background-image: url("../img/share_icon_shine.png");
+}
+.ui-nosvg .ui-icon-share:after {
+    background-image: url("../img/share_icon_shine.png");
+}
+
+.option-menu-panel{
+    background-color: #6DBB00 !important;
+    box-shadow: 3px 0 1000px rgba(0,0,0,15) !important;
+}
+
+.option-menu-lateral{
+    font-weight: 100 !important;
+    font-family: "Myriad Pro";
+    font-size: 20px !important;
+}
+
+#result-top5 .swiper-slide {
+    background-image: url("../img/ica/box_home.png") !important;
+    background-size: 102% 101%;
+    box-shadow: none;
+}
+
+.swiper-button-next{
+    background-image: url("../img/ica/arrow_right_green.png");
+    background-size: 160%;
+    background-position: center !important;
+    right: 2px
+}
+
+
+.swiper-button-prev{
+    background-image: url("../img/ica/arrow_left_green.png");
+    background-size: 160%;
+    background-position: center !important;
+    left: 2px
+}
+
+.swiper-slide [id^='swiper-image']{
+    width: 98% !important;
+    margin: 0.7% !important;
+}
+
+.swiper-slide .seemore{
+    color: #00701C !important;
+    text-shadow: 1px 1px 15px #00701C !important;
+    text-align: center !important;
+}
+
+.pressme, .visible{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-bottom: 0px !important;
+    background-image: url("../img/popup.png");
+    background-color: transparent;
+    background-size: 120% !important;
+    background-position-x: -10px;
+    position: absolute;
+    bottom: 0;
+    width: 99.9%;
+}
+
+.pressme h2 {
+    color: white;
+    margin-bottom: 0px !important;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-weight: 200;
+
+}
+
+.ui-btn-icon-comment{
+    background-image: url("../img/ica/comment_icon_shine.png") !important;
+    background-size: 70% 60%;
+}
+
+.ui-btn-icon-comment:after{
+    background-color: transparent;
+}
+
+.ui-btn-circle-comment{
+    background-image: url("../img/ica/comment_icon_shine.png") !important;
+    background-size: 70% 60%;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.ui-btn-icon-heart{
+    background-image: url("../img/ica/heart_icon_shine.png") !important;
+    background-size: 70% 60%;
+    background-position: center;
+}
+
+.ui-btn-icon-heart.userValuation{
+    background-image: url("../img/ica/heart_icon_shine.png") !important;
+    background-size: 70% 50% !important;
+    background-position: center;
+}
+
+.ui-btn-icon-heart-filled, .ui-btn-icon-heart.selected{
+    background-image: url("../img/ica/heart_filled_icon_shine.png") !important;
+    background-size: 70% 60%;
+    background-position: center;
+}
+
+.ui-btn-circle-heart{
+    background-image: url("../img/ica/heart_icon_shine.png") !important;
+    background-size: 70% 60%;
+    background-position: center 60%;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+
+}
+
+.ui-btn-icon-share{
+    background-image: url("../img/ica/share_icon_shine.png") !important;
+    background-size: 60% 70%;
+
+}
+
+.ui-btn-icon-share:after{
+    background-image: url("../img/ica/share_icon_shine.png") !important;
+}
+
+.ui-btn-circle-share{
+    background-image: url("../img/ica/share_icon_shine.png") !important;
+    background-size: 60% 70%;
+    background-position: 40% center;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.options{
+    background-image: url("../img/popup.png") !important;
+}
+
+div#popupContent a#seemore{
+    color: #00701C !important;
+    text-shadow: 0px 0px 10px #00701C !important;
+}
+
+.category-menu .ui-btn-icon-right:after {
+    background-color: #6DBB00 !important;
+}
+
+.category-menu .ui-btn, .category-menu .ui-btn:hover {
+    background-color: #6DBB00 !important;
+}
+
+#home, #profile, #contents, #showcontent, #register, #benefits{
+    background-image: none;
+}
+
+#home header, #profile header, #contents header, #showcontent header, #forcepassword .ui-header, #forgetpassword .ui-header, #benefits header{
+    background-color: #6DBB00 !important;
+    font-family: "Myriad Pro";
+}
+
+#register .ui-header, #forcepassword .ui-header, #forgetpassword .ui-header{
+    background-color: #00701C !important;
+}
+
+#register .ui-footer, #forcepassword .ui-footer, #forgetpassword .ui-footer{
+    background-color: #00701C !important;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+    overflow: visible;
+}
+
+#load-top5, #refresh-contents.ui-btn{
+    font-family: "Myriad Pro";
+    font-size: 22px;
+    font-weight: 100;
+    background-color: #6DBB00 !important;
+}
+
+.ui-icon-refresh.selected:after, #refresh-contents.selected:after, #refresh-video.selected:after, #refresh-audio.selected:after{
+    background-image: url("../img/gif-load.gif") !Important;
+    background-size: contain;
+}
+
+#register .ui-btn-icon-cancel, #profile .ui-btn-icon-cancel, #popupNotification .ui-btn-icon-cancel{
+    background-image: url("../img/ica/cancel_icon_white.png") !important;
+    background-size: 60% !important;
+    background-position: center !important;
+}
+
+#login .ui-btn-icon-cancel, #forcepassword .ui-btn-icon-cancel, #forgetpassword .ui-btn-icon-cancel, #popupNotification .ui-btn-icon-cancel, #register .ui-btn-icon-cancel{
+    background-image: url("../img/ica/cancel_icon_white.png") !important;
+    background-size: 60% !important;
+    background-position: center !important; 
+}
+
+.ui-btn-circle-cancel{
+    background-image: url("../img/ica/cancel_icon_green.png") !important;
+    background-size: 60% 60%;
+    background-position: center;
+    border: 1px solid #6DBB00 !important;
+}
+
+.ui-btn-circle-cancel-blue{
+    background-image: url("../img/ica/cancel_icon_green.png") !important;
+}
+
+.ui-icon-search{
+    background-image: url("../img/search_icon.png") !important;
+}
+
+.main-menu li .ui-btn-b{
+    background-color: #6DBB00 !important;
+}
+
+.main-menu-option .btn-selected{
+    padding-bottom: 9px !important;
+    border-bottom: 3px solid #6DBB00 !important;
+}
+
+.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited{    
+    color: #6DBB00;
+}
+
+.ui-btn-icon-contents{
+    background-image: url("../img/ica/contents_icon.png");
+}
+
+.ui-btn-icon-contents.ui-btn-b{
+    background-image: url("../img/ica/contents_icon_selected.png");
+    background-size: 160%
+}
+
+.ui-btn-icon-home{
+    background-image: url("../img/home_icon.png") !important;
+}
+
+.ui-btn-icon-home.ui-btn-b{
+    background-image: url("../img/home_icon_selected.png") !important;
+}
+
+.ui-btn-icon-profile{
+    background-image: url("../img/profile_icon.png") !important;
+}
+
+.ui-btn-icon-profile.ui-btn-b{
+    background-image: url("../img/profile_icon_selected.png") !important;
+}
+
+#editPhoto, #editPhotoRegister{
+    background-image: url("../img/ica/edit_photo_icon.png");
+}
+
+#showcontent #comments .creationDate,  .swiper-wrapper .comments .creationDate{
+    color: #6DBB00 !important;
+}
+
+#more-options-button{
+    background-image: url('../img/ica/plus_icon_green.png') !important;
+    background-size: 60%;
+    margin: auto;
+}
+
+#showcontent #audio-comment-button{
+    background-image: url("../img/ica/audio_icon_green.png");
+}
+
+#showcontent #gallery-comment-button{
+    background-image: url("../img/ica/gallery_icon_green.png");
+}
+
+#showcontent #image-comment-button, #showcontent #image-comment-button-extra{
+    background-image: url("../img/ica/image_icon_green.png");
+    background-size: 80% !important;
+}
+
+#showcontent #video-comment-button{
+    background-image: url("../img/ica/video_icon_green.png");
+}
+
+#stop-preview-button{
+    background-image: url("../img/record_audio_icon_blue.png");
+}
+
+#showcontent #play-preview-button{
+    background-image: url("../img/play_audio_icon_blue.png");
+}
+
+#showcontent #pause-preview-button{
+    background-image: url("../img/pause_audio_icon_blue.png");
+}
+
+#audio-comment-preview #audio-animation{
+    background-image: url("../img/audio_wave.gif");
+}
+
+#showcontent #new-comment>#submit-button-comment{
+    background-image: url("../img/ica/send_icon_green.png");
+}
+
+#formProfile label, #formRegister label{
+    font-family: "Myriad Pro" !important;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: none !important;
+}
+
+#formRegister label{
+    color: white !important;
+    text-shadow: none !important;
+}
+
+#formProfile input{
+    width: 80% !Important;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: black;
+    color: black;
+    font-family: "Myriad Pro";
+    text-shadow: none !important;
+}
+
+#formProfile .ui-input-text, #formProfile .ui-input-number, #formRegister .ui-input-text, #formRegister .ui-input-number{
+    text-shadow: none !important;
+    color: white !important;
+}
+
+.information-text{
+   text-shadow: none !important;
+   font-weight: bolder;
+   color: #C3C800;
+}
+
+#formProfile .ui-input-btn, #formRegister .ui-input-btn{
+    font-family: "Myriad Pro";
+    background-color: #6DBB00 !important;
+    border-radius: 20px !important;
+    text-shadow: none;
+    box-shadow: none !important;
+}
+
+#formRegister ::-webkit-input-placeholder, #formForgetPassword ::-webkit-input-placeholder  , #formForcePassword ::-webkit-input-placeholder    {
+    color: white;
+    font-size: 18px;
+    text-shadow: none !important;
+}
+
+#formProfile ::-webkit-input-placeholder{
+    color: #6DBB00;
+    font-size: 18px;
+    text-shadow: none !important;
+}
+
+#formRegister input:required:invalid, #formRegister input:focus:invalid {
+    background-image: url("../img/ica/cancel_icon_white.png");
+    background-position-x: 100% !important;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+#formRegister input:required:valid, #formRegister input:focus:valid {
+    background-image: url("../img/ica/valid_white.png");
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+
+#formProfile input:required:invalid, #formProfile input:focus:invalid {
+    background-image: url("../img/ica/cancel_icon_black.png");
+    background-position-x: 100% !important;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+#formProfile input:required:valid, #formProfile input:focus:valid {
+    background-image: url("../img/ica/valid_black.png");
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+
+#formLogin input:required:invalid, #formLogin input:focus:invalid, #formForcePassword input:required:invalid, #formForcePassword input:focus:invalid, #formForgetPassword input:required:invalid, #formForgetPassword input:focus:invalid {
+    background-image: url("../img/ica/cancel_icon_white.png");
+    background-position-x: 100% !important;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+#formLogin input:required:valid, #formLogin input:focus:valid, #formForcePassword input:required:valid, #formForcePassword input:focus:valid, #formForgetPassword input:required:valid, #formForgetPassword input:focus:valid {
+    background-image: url("../img/ica/valid_white.png");
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;   
+}
+
+#login, #forcepassword, #forgetpassword, #register{
+    background-image: url("../img/ica/fondo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#formLogin label{
+    font-family: "Myriad Pro";
+}
+
+#formLogin input, #formForcePassword input, #formForgetPassword input, #formRegister input{
+    font-family: "Myriad Pro";
+    color: white;
+    border-width: 0px 0px 1px 0px;
+    border-color: white;
+}
+
+#formLogin .ui-input-btn, #formForcePassword .ui-input-btn, #formForgetPassword .ui-input-btn, #formRegister .ui-input-btn{
+    font-family: "Myriad Pro";
+    font-size: 25px;
+    font-weight: 100;
+    background-color: white !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+    color: #00701C !important;
+}
+
+.button-login{
+    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.ui-btn-icon-file {
+    background-image: url(../img/pdf.png) !important;
+}
+
+.countBubl{
+    background: #00701C;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->     
+        <meta charset="utf-8" /> <!--codificación de caracteres -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1.5, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />  
+        <!-- aspecto del visor, propiedades gráficas adaptadas a la escala de dispositivos moviles -->
+        
+        
+      <!-- Inclusión de scripts necesarios -->
+        <script type="text/javascript" src="cordova.js"></script> <!-- PhoneGap -->
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <script type="text/javascript" src="js/jquery-1.11.3.js"></script> <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> <!-- JQuery Mobile -->
+        <script type="text/javascript" src="js/sha256.min.js"></script>
+        <script type="text/javascript" src="js/moment.js"></script>
+        <script type="text/javascript" src="js/lodash.js"></script>
+        <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/mods.css" />
+        <title>Pet Scanner</title>
+    </head>
+    <body>
+       <section id="login" data-role="page">           
+            <div data-role="content"> 
+                <div class="stateconnection"></div> 
+                <div class="app-logo"></div>
+                <div id="errorMessageLogin"></div>
+                <div id="successMessageLogin"></div>
+                <div id="infoMessageLogin"></div>
+                <form id="formLogin">
+                    <label>Usuario</label>
+                    <input type="text" id="usernameLogin" name="username" class="div-input"  placeholder="USUARIO" required>
+                    <label>Contraseña</label>
+                    <input type="password" id="passwordLogin" name="password" class="div-input"  placeholder="******" required>
+                    <input class="button-login" type="submit" value="INICIAR">
+                </form>     
+                <a id="forgetPasswordLink" href="#forgetpassword" class="ui-link ui-corner-all" data-transition="slide"><img src="img/resetpass.png">Recuperar Contraseña</a>
+            </div>
+        </section>
+        <section id="forcepassword" data-role="page">           
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="#login" id="buttonBackForcePassword" data-transition="slide" data-direction="reverse" class="ui-btn-left ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h4>ACTUALIZAR CONTRASEÑA</h4>
+            </div>
+
+            <div data-role="content">   
+                <div id="errorMessageForcePassword">Su contraseña ha expirado, por favor actualícela.</div>
+                <form id="formForcePassword">
+                    <label>Usuario</label>
+                    <input type="text" id="usernameForcePassword" name="usernameForcePassword" placeholder="USUARIO" required>
+                    <label>Contraseña Anterior</label>
+                    <input type="password" id="oldPassword" name="oldPassword" minlength="5" placeholder="CONTRASEÑA ANTERIOR" required>
+                    <label>Nueva Contraseña</label>
+                    <input type="password" id="newPassword" name="newPassword" minlength="8" placeholder="NUEVA CONTRASEÑA" required>
+                    <label>Repetir Contraseña</label>
+                    <input type="password" id="confirmNewPassword" name="confirmNewPassword" minlength="8" placeholder="REPETIR NUEVA CONTRASEÑA" required>
+
+                    <input type="submit" value="ACTUALIZAR" id="botonRefreshPassword">
+
+                </form>     
+            </div>
+        </section>
+        <section id="forgetpassword" data-role="page">           
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
+                <a href="#login" id="buttonBackForgetPassword" class="ui-btn-left ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-carat-l ui-btn-icon-notext"></a>
+                <h4 class="title-long">RECUPERAR CONTRASE&Ntilde;A</h4>
+                <div class="stateconnection"></div> 
+            </div>
+
+            <div data-role="content">   
+                <div class="app-logo"></div>
+                <div id="errorMessageForgetPassword"></div>
+                <form id="formForgetPassword">
+                    <label>Nombre de Usuario</label>
+                    <input type="text" id="usernameForgetPassword" name="usernameForgetPassword" placeholder="NOMBRE DE USUARIO"required>
+                    <label>DNI</label>
+                    <input type="number" id="personalidForgetPassword" name="personalidForgetPassword" max="999999999" min="10000000" placeholder="DNI" required>
+          
+                    <input type="submit" value="RECUPERAR" id="buttonForgetPassword">
+
+                </form>     
+            </div>
+        </section>        
+        <section id="home" data-role="page">
+            <div class="app-logo" style="background-size: 70%;width: 15vw !important;min-width: 35vw !important;height: 139px !important;float: left;position: absolute;top: -11px;margin: 0 !important;z-index: 5;"></div>
+            <header data-role="header" data-position="fixed">
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="iconHome"></div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="stateconnection stateConnectionOnline"></div>
+                    </div>     
+                </fieldset>
+            </header>                      
+            <div data-role="panel" class="option-menu-panel" data-position="left" data-display="overlay">
+                <header data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit ui-header-fixed slidedown">
+                    <h4>CONFIGURACI&Oacute;N</h4>
+                </header>
+                <div data-role="content" class="content-panel">
+                    <a href="#createInspectionWithoutLoad" class="option-menu-lateral">INSPECCIÓN SIN CARGO</a>
+                    <a id="workersAnnex_inspectionWithoutCharge_secondary" class="option-menu-lateral">ANEXO DE TRABAJADORES</a>
+                    <a id="close-session-home" class="option-menu-lateral">CERRAR SESI&Oacute;N</a>
+                </div>
+            </div>
+
+             <!-- Inicio menu header -->
+            <div data-id="menu" data-position="fixed" data-theme="b" class="main-menu">
+                <nav data-role="navbar" data-iconpos="top">
+                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>
+                    <!-- <h4 class="tituloNav">Lista de cargos Programados</h4> -->
+                </nav>
+            </div>
+            <!-- Fin menu header -->            
+           
+            <div data-role="content" class="ui-content-page">       
+                <div id="errorMessageHome"></div>
+                <div id="successMessageHome"></div>
+                <div id="infoMessageHome"></div>
+                <div id="content_loader" style="margin: 80% 0;">
+                    <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" class="img_loader_content">
+                </div>
+                <ul id="cards" class="ui-listview"></ul>
+                
+                <!-- <div class="content_scan_banner">   
+                    <img src="img/scanner_backhome.png" style="width: 65%;margin: 13% 23% 0;">
+                    <h4 style="text-align: center;">ESCANEA EL CODIGO PARA AGREGAR TU MASCOTA</h4>    
+                    <a href="#" id="btn_qr">
+                        <img src="img/qr_blanco.png" id="btn_qr_img">
+                    </a>
+                </div> -->
+                <a href="#" id="btn_qr">
+                    <img src="img/qr_blanco.png" id="btn_qr_img">
+                </a>
+            </div>
+        </section>
+
+        <section id="mapa" data-role="page">
+            <div class="app-logo" style="background-size: 70%;width: 15vw !important;min-width: 35vw !important;height: 139px !important;float: left;position: absolute;top: -11px;margin: 0 !important;z-index: 5;"></div>
+            <header data-role="header" data-position="fixed">
+                <fieldset class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="iconHome"></div>
+                    </div>
+                    <div class="ui-block-b">
+                        <div class="stateconnection stateConnectionOnline"></div>
+                    </div>     
+                </fieldset>
+            </header>                      
+            <div data-role="panel" class="option-menu-panel" data-position="left" data-display="overlay">
+                <header data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit ui-header-fixed slidedown">
+                    <h4>CONFIGURACI&Oacute;N</h4>
+                </header>
+                <div data-role="content" class="content-panel">
+                    <a href="#createInspectionWithoutLoad" class="option-menu-lateral">INSPECCIÓN SIN CARGO</a>
+                    <a id="workersAnnex_inspectionWithoutCharge_secondary" class="option-menu-lateral">ANEXO DE TRABAJADORES</a>
+                    <a id="close-session-home" class="option-menu-lateral">CERRAR SESI&Oacute;N</a>
+                </div>
+            </div>
+
+             <!-- Inicio menu header -->
+            <div data-id="menu" data-position="fixed" data-theme="b" class="main-menu">
+                <nav data-role="navbar" data-iconpos="top">
+                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>
+                    <!-- <h4 class="tituloNav">Lista de cargos Programados</h4> -->
+                </nav>
+            </div>
+            <!-- Fin menu header -->            
+           
+            <div data-role="content" class="ui-content-page">       
+                <div id="errorMessageHome"></div>
+                <div id="successMessageHome"></div>
+                <div id="infoMessageHome"></div>
+                <div id="map" style="height: 285px;width: 100%;position: relative;overflow: hidden;margin-top: 21.5%;"></div>
+                <img id="pet_image" src="" style="width: 35%;min-width: 35%;min-height: 150px;position: absolute;z-index: 100;bottom: 18.5em;left: .5em;">
+                <div class="info-pet">
+                    <div data-role="collapsible">
+                        <h4>CHAT</h4>
+                        <p>
+                            <div class="wrapper">
+                                <div class="container">
+                                  <div class="chatMsg">
+                                    <ul>
+                                      <li>
+                                        <div class="avatar">
+                                          <img src="https://pickaface.net/gallery/avatar/20120828_115442_2229_tete.png" width="32" height="32" alt>
+                                        </div>
+                                        <div class="msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>                   </li>          
+                                    </ul>
+                                  </div>
+                                  <div class="chatBox">
+                                    <span class="mdi mdi-attachment"></span>
+                                    <span class="mdi mdi-send disabled"></span>
+                                    <textarea rows="1" placeholder="Write a response" id="msgTypeBox"></textarea>        
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h4>Heading</h4>
+                        <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h4>Heading</h4>
+                        <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+                    </div>
+                </div>
+            </div> 
+        </section>     
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer ></script>
+ 
+
+        
+
+
+        <!-- <script type="text/javascript" src="js/db.js"></script> Funciones principales de la base de datos -->
+        <script type="text/javascript" src="js/modules.js"></script> <!-- Módulos incluídos en la app -->
+        <script type="text/javascript" src="js/core.js"></script> <!-- Nucleo principal de funciones de la app -->
+        <!-- <script type="text/javascript" src="js/dictionary.js"></script> Diccionario --> -->
+        <!-- <script type="text/javascript" src="js/beacons.js"></script>Módulo de Beacons --> -->
+        <!-- <script type="text/javascript" src="js/gps.js"></script> Módulo de GPS --> -->
+        <script type="text/javascript" src="js/framework.js"></script> <!-- Funciones compartidas de módulos de la app -->
+        <script type="text/javascript" src="js/taggsModule.js"></script>
+        <!-- <script type="text/javascript" src="js/loadInspection.js"></script> -->
+        <!-- <script type="text/javascript" src="js/randomInspection.js"></script> -->
+        <!-- <script type="text/javascript" src="js/workersAnnex.js"></script> -->
+        <!-- <script type="text/javascript" src="js/qunit-tests.js"></script> Tests de Unidad de módulos de la app -->
+        <script type="text/javascript">
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.031 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            });
+        }
+
+        window.initMap = initMap;
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,3379 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .titulo{
+        color: #9E9E9E;
+    }
+    .iconHome {
+        background-image: url(../img/home_icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2em !important;
+        margin-left: 5%;
+        margin-top: 0%;
+        height: 30px;
+    }
+    h4.tituloNav {
+        width: 100% !important;
+        text-transform: uppercase !important;
+        margin: 0.2% auto !important;
+        text-shadow: none !important;
+        font-size: x-large !important;
+    }
+    #home .stateconnection {
+        float: right;
+        margin-right: 15% !important;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  .titulo{
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .titulo{
+      color: #FFEB3B;
+    }
+    .iconHome {
+        background-image: url(../img/home_icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2em !important;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    .iconBack{
+        background-image: url(../img/back_icon.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 38%;
+        width: 1em !important;
+        height: 0.8em !important;
+        margin: 0.5em 1.4em!important;
+        float: left;
+        background-color: transparent !important;
+        border-style: none;
+
+    }  
+    .recordCard {
+        width: 89% !important;
+    }   
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .titulo{
+        color: #4CAF50;
+    }
+    h4.tituloNav {
+        width: 73%;
+        text-transform: uppercase;
+        margin: 2% auto;
+        text-shadow: none;
+        text-align: center !important;
+    }
+    .recordCard {
+        margin: 8% auto !important;
+    }
+    .iconHome {
+        background-image: url(../img/home_icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2em !important;
+        margin-left: 5%;
+        margin-top: 0%;
+        height: 30px;
+    }
+    .recordCard {
+        width: 89% !important;
+        margin-bottom: 4% !important;
+    }
+    #btnAgregarRespLista, #btnAgregarRespLista_loadInspection, #btnAgregarRespLista_loadRandomInspection {
+        background-position: 40% 50% !important;
+    }
+    .ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content.ui-collapsible-collapsed {
+        width: 100%;
+        margin-bottom: 3%;
+        height: 8.3vh;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* tablet */
+
+    .titulo{
+    }
+    h4.tituloNav {
+        width: 100%;
+        text-transform: uppercase;
+        margin: 2% auto;
+        text-shadow: none;
+        text-align: center !important;
+    }   
+    .iconHome {
+        background-image: url(../img/home_icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2em !important;
+        margin-left: 5%;
+        margin-top: 0%;
+        height: 30px;
+    }
+    .ui-btn, label.ui-btn {
+        font-weight: 700;
+        border-width: 2px;
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-style: solid;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+    }    
+    .recordCard, .cardRelievedWorkerData_workersAnnex, .cardRegisteredWorkerData_workersAnnex, .cardWorker {
+        margin: 10% auto !important;
+        width: 90% !important;
+        margin-bottom: 5% !important;
+    }  
+    .iconInputSearch{
+        margin-top: -40px !important;
+        border-radius: 0 !important;     
+    }
+
+    #createInspectionWithoutLoad .ui-tabs {
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .geomap{
+        width: 92%!important;
+        height: 19vh !important;
+        float: left !important;
+        margin-top: -18px !important;
+        margin-bottom: 7% !important;
+    }
+    .contentInfo {
+        width: 87%;
+        height: 70%;
+        float: left;
+        padding: 2% 1% 0% 3%;
+        color: #817f5f;
+    }
+    .left {
+        float: left !important;
+        width: 50% !important;
+        overflow: hidden !important;
+    }
+    .right {
+        float: right !important;
+        width: 50% !important;
+        overflow: hidden !important;
+    }
+    .icons {
+        width: 8%;
+        float: left !important;
+        height: 65%;
+        padding-top: 2%;
+    }    
+    .downloadIconBlancoVerde{
+        margin: -1.5% -6% 0% 10% !important;
+    }
+
+    .cardWorker .deleteWorker{
+        margin-left: 20% !important;
+    }
+
+    .cardWorker .editWorker, .cardWorker .deleteWorker{
+        margin-top: 1.2em !important
+    }
+
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+   
+    /*-----------BLUESTACK/*-----------*/
+    
+    .titulo{
+        color: #3F51B5;
+    }
+    ul#formWithoutLoad1_loadRandomInspection {
+        list-style: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .recordCard, .cardRelievedWorkerData_workersAnnex, .cardRegisteredWorkerData_workersAnnex {
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        color: #817f5f;
+        padding-top: 1px;
+        font-family: "Helvetica Bold";
+        min-height: 165px;
+        height: 165px;
+        margin: 5% auto;
+        width: 80%;
+    }
+    .recordCard h3 {
+        margin-bottom: 0px !important;
+    }
+    .recordCard .box {
+        display: block !important;
+        margin-top: 10px;
+        float: left;
+        width: 95%;
+    }
+    .recordCard .box div {
+        display: block;
+        float: left;
+        width: 50%;
+        font-family: "Helvetica Light";
+        font-size: 13px;
+    }
+    .campUserIdLabel {
+        float: left !important;
+        margin-top: 10px !important;
+        margin-bottom: 0px;
+        width: 100% !important;
+    }
+    a.ui-link.ui-btn.ui-btn-a.ui-tabs-anchor {
+        font-size: x-small;
+    }
+    a.ui-collapsible-heading-toggle.ui-btn.ui-btn-icon-right.ui-btn-inherit.ui-icon-minus {
+        font-size: 12px;
+    }
+    #one.ui-content, #two.ui-content, #three.ui-content, #humantraffic.ui-content, #workconditions.ui-content, #childlabor.ui-content {
+        margin-top: 5% !important;
+        padding-top: 0 !important;
+    }
+    .shownLocationContent>.ui-collapsible-heading {
+        margin-bottom: 0;
+    }
+
+    .iconHome {
+        background-image: url(../img/home_icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2em !important;
+        margin-left: 5%;
+        margin-top: 0%;
+        height: 30px;
+    }
+    a.ui-collapsible-heading-toggle.ui-btn.ui-btn-icon-right.ui-btn-inherit.ui-icon-plus {
+        font-size: 12px !important;
+        text-align: center;
+    }
+    h4.tituloNav {
+        margin: 16px !important;
+        position: relative !important;
+        text-align: center !important;
+        font-size: smaller !important;
+    }
+    .ui-content {
+        padding: 3.5em 1em !important;
+        padding-bottom: 0.5em !important;
+    }
+    .actionNumber {
+        height: 25px !important;
+    }
+    .alertIcon.downloadIconBlancoVerde {
+      margin-top: -2% !important;
+    }
+    .leftInputs {
+        width: 100% !important;
+    }
+    .ui-grid-b.ui-tabs-nav.ui-helper-reset.ui-helper-clearfix.ui-widget-header.ui-corner-all {
+        width: 100%;
+    }
+    #createEmployeesAnnex .recordCard .box div {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        font-family: "Helvetica Light";
+        font-size: 16px;
+    }
+    .iconInputSearch, #iconInputSearch, #btnSearchCuit_loadRandomInspection{
+        margin-top: -39px !important;
+        border: 1px solid #817f5f;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        height: 30px !important;
+    }
+    #establish .ui-collapsible-content .cardItem{
+        border-radius: 0;
+        display: inline-block !important;
+        margin: 0%;
+        margin-top: 5%;
+        min-height: 81px;
+        vertical-align: top;
+    }
+    #loadInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #loadRandomInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all{
+        width: 90%;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 5%;
+    }    
+    #loadInspection .ui-navbar .ui-state-active a , #createInspectionWithoutLoad .ui-navbar .ui-state-active a, #loadRandomInspection .ui-navbar .ui-state-active a, #humanTrafficAnnex  .ui-navbar .ui-state-active a  {
+        background-color: #817f5f !important;
+        color: white !important;
+        font-weight: bold;
+        border-style: none;
+        font-size: 10px;
+        text-shadow: none;
+    }
+    #loadInspection .ui-navbar .ui-state-disabled a , #createInspectionWithoutLoad .ui-navbar .ui-state-disabled a, #loadRandomInspection .ui-navbar .ui-state-disabled a, #humanTrafficAnnex .ui-navbar .ui-state-disabled a{
+        box-shadow: none;
+        border-color: #817f5f;
+        color: #fff;
+        text-shadow: none;
+        font-size: 10px;
+    }
+    .cardItem{
+        width: 88% !important
+    }
+    #establish .ui-collapsible-heading {
+        height: auto;
+    }
+    #closeLoadInspection .contentUl.cardContainer, #closeLoadRandomInspection .contentUl.cardContainer {
+        margin-top: 11%;
+    }
+    .geomap {
+        width: 110px !important;
+        height: 95px !important;
+        float: left !important;
+    }
+    .campUserIdLabel{
+        float: left !important;
+        width: 100% !important;
+    }
+    .box {
+        padding: 0;
+        font-size: smaller;
+    }
+    #two a{
+        height: 20px !important;
+        min-height: 20px !important;
+        border-color: #635d20 !important;
+        font-size: 11px !important;
+    }
+    #textRadioOtroCamp{
+        margin-top: 15px;
+    }
+    .param{
+        width: 100% !important;
+        padding: 2% 0;
+    }
+    #compInfoSeeCharge #locationParams{
+        width: 90% !important;
+        height: 35vh;
+        display: block;
+        padding: 5%;
+        margin-bottom: 5%;
+        min-width: 90%;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    #compInfoSeeCharge label{
+        margin: 5% 0% 0% 5%;
+    }
+    .iconBack{
+        background-image: url(../img/back_icon.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        background-size: 38%;
+        width: 1em !important;
+        height: 0.8em !important;
+        margin: 0.5em 0.3em !important;
+        border-style: none;
+        padding: 0.65em !important;
+    }
+    #btnAgregarRespLista, #btnAgregarRespLista_loadInspection, #btnAgregarRespLista_loadRandomInspection {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 13px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        margin-bottom: 0;
+        background-color: #817f5f !important;
+        background-image: url(../img/add_circle_white.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: 22% 50% !important;
+        font-family: "Helvetica Medium";
+        font-size: 16px;
+        font-weight: 100;
+        text-shadow: none;
+        letter-spacing: 0.05em;
+    }
+    #textRadioOtroCamp, #textRadioOtroCamp_loadInspection, #textRadioOtroCamp_loadRandomInspection {
+        margin: -5% 5% !important;
+    }
+
+    #workersAnnex .recordCard{
+        min-height: 195px;
+    }
+
+    .cardRegisteredWorkerData_workersAnnex{
+        overflow: auto;
+    }
+
+    .cardRelievedWorkerData_workersAnnex{
+        overflow: auto;
+    }
+
+    #workersAnnex .btnNextDiv{
+        width: 40% !important;
+        margin: 5% auto !important;
+        float: none !important;
+    }
+
+    #formWorkerAnnex2 label, #formWorkersAnnex1 label{
+        min-height: 32px;
+        vertical-align: bottom; !important
+    }
+
+    #occupationDiv_worker{
+        margin-bottom: 30px !important;
+    }
+}
+/*---------------------CARDS LISTADO DE CARGOS------------------------*/
+.card {
+    width: 90%;
+    height: auto;
+    background: #fff;
+    margin: 5%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.card_blocked {
+    width: 90%;
+    height: auto;
+    background: #95c06b !important;
+    margin: 5%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    display: inline-block;
+    margin-bottom: 0;
+}
+.card_blocked label.itemLabel {
+    color: #fff;
+    text-shadow: none;
+}
+.card_blocked label.textItem{
+    color: #fff;
+    text-shadow: none;
+}
+.actionNumber {
+    width: 97%;
+    height: auto;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 4% 0% 0% 3%;
+    margin-bottom: 0% !important;
+    display: inline-block;
+}
+.itemLabel {
+    float: left;
+    padding-right: 2%;
+    color: #817f5f;
+    font-size: 13px !important;
+}
+.textItem {
+    float: left;
+    font-family: "Helvetica Light" !important;
+    font-size: 11px !important;
+    color: #817f5f;
+    text-transform: capitalize;    
+}
+.itemLabel_blocked {
+    float: left;
+    padding-right: 2%;
+    color: #817f5f;
+    font-size: 13px !important;
+}
+.textItem_blocked {
+    float: left;
+    font-family: "Helvetica Light" !important;
+    font-size: 11px !important;
+    color: #817f5f;
+    text-transform: capitalize;    
+}
+.contentInfo {
+    width: 80%;
+    height: auto !important;
+    float: left;
+    padding: 2% 3%;
+    color: #817f5f;
+}
+.cardItem {
+    width: 90% !important;
+}
+.left{
+    float: left;     
+}
+.right{
+    float: right; 
+}
+.icons {
+    width: 10%;
+    float: left !important;
+    height: 65%;
+    padding-top: 2%;
+}
+.actionIcon {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 35px;
+    margin: 0 auto;
+}
+.viewIcon {
+    background-image: url(../img/see_charge_icon.png);
+}
+.editIcon {
+    background-image: url(../img/edit_charge_icon.png);
+}
+.editWorkersAnnex {
+    background-image: url(../img/altaTrabajador.png);
+}
+.downloadIcon {
+    background-image: url(../img/download_charge_icon.png);
+}
+
+.downloadIconBlancoVerde {
+    background-image: url(../img/white_downloaded_charge_icon.png);
+}
+
+.successMessageContent {
+    width: 70%;
+    margin: 0 auto;
+}
+.alertIcon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    background-size: cover;
+    margin: 4.5% 3% 0% 0%;
+}
+/*---------------------CARDS LISTADO DE CARGOS------------------------*/
+
+
+
+.main-menu nav {
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background: #95c06b;
+    padding: 0;
+    box-shadow: 0px 8px 11px 0 rgba(0, 0, 0, 0.26), -2px 14px 12px -2px rgba(0,0,0,0.12), 0px 5px 8px 0 rgba(0,0,0,0.2);
+}
+/*.iconHome{
+    background-image: url("../img/home_icon.png");
+    background-repeat: no-repeat;
+    background-size: 73%;
+    width: 9%;
+    height: 28px;
+    margin-left: 5%;
+}*/
+/*.iconBack{
+    background-image: url(../img/back_icon.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 38%;
+    width: 5%;
+    height: 33px;
+    margin: 0.5% 3%;
+    float: left;
+    border: 0;
+}*/
+/*
+.iconBack:active{
+    background-color: transparent !important;
+}*/
+
+#home .stateconnection {
+    float: right;
+    margin-right: 9%;
+}
+
+.ui-header.ui-bar-inherit.ui-header-fixed.slidedown.ui-fixed-hidden {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+box-shadow: 0px 8px 11px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+z-index: 5 !important;
+}
+.contentUl {
+    height: 80px;
+    padding: 2%;
+    color: #817f5f;
+}
+.card ul li {
+    width: 50%;
+    float: left;
+}
+.actionIcon{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 35px;
+    float: right;
+    margin: 18% 10% 0 0;
+}
+
+a.actionIcon[downloaded='true']{
+    background-image: url("../img/downloaded_charge_icon.png");
+    transition: all 0.5s;
+    background-size: 100%;
+}
+div[downloaded='true']{
+    background-image: url("../img/downloaded_charge_icon.png");
+    transition: all 0.5s;
+    background-size: 100%;
+}
+.main-menu nav {
+    height: 40px !important;
+    width: 100% !important;
+    color: #fff;
+    background: #95c06b !important;
+    padding: 0 !important;
+}
+/*.iconHome{
+    background-image: url("../img/home_icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 9%;
+    height: 33px;
+    margin-left: 5%;
+    margin-top: 2%;
+}*/
+.iconBack{
+    background-image: url(../img/back_icon.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: 38%;
+    width: 1em !important;
+    height: 0.8em !important;
+    margin: 0.5em 0.3em !important;
+    padding: 0.65em !important;
+    background-color: transparent !important;
+    margin-left: 23% !important;
+    border-style: none;
+}
+
+
+
+.iconBack::after{
+    background-color: transparent;
+}
+
+h4.tituloNav {
+    text-transform: uppercase;
+    margin: 2% auto;
+    text-shadow: none;
+}
+#home .stateconnection {
+    float: right;
+    margin-right: 9% !important;
+}
+.ui-header.ui-bar-inherit.ui-header-fixed.slidedown.ui-fixed-hidden {
+    box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+z-index: 5 !important;
+}
+
+#seecharge .main-menu ul, #closechargelessinspection .main-menu ul, #createInspectionWithoutLoad .main-menu ul, #closeLoadInspection .main-menu ul, #closeLoadRandomInspection .main-menu ul, #loadInspection .main-menu ul, #loadRandomInspection .main-menu ul, #createEmployeesAnnex .main-menu ul, #workersAnnex .main-menu ul, #humanTrafficAnnex .main-menu ul{
+    float: left;
+    margin-left: 3%;
+    width: 10%;
+    display: inline-block;
+}
+
+#home .main-menu .tituloNav{
+    float: unset !important;
+}
+
+#seecharge .main-menu .tituloNav, #closechargelessinspection .main-menu .tituloNav, #createInspectionWithoutLoad .main-menu .tituloNav, #closeLoadInspection .main-menu .tituloNav, #closeLoadRandomInspection .main-menu .tituloNav, #loadRandomInspection .main-menu .tituloNav, #createEmployeesAnnex .main-menu .tituloNav, #humanTrafficAnnex .main-menu .tituloNav{
+    text-align: left;
+    margin-top: 15px !important;
+    text-overflow: ellipsis;
+    max-height: 25px !important;
+    overflow: auto;
+    float: left;
+    white-space: nowrap;
+    display: inline-block;
+    width: 68%;
+}
+
+#chargeInformation, .cardContainer{
+    background-color: white;
+    padding: 5%;
+    width: 90%;
+    margin: 3% auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #817f5f;
+    padding-top: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto !important;
+    counter-reset: brick;
+    text-transform: capitalize;
+}
+
+#chargeInformation>h4>label, #chargeInformation>h4>span{
+    font-size: 22px !important;
+    font-weight: 100;
+    display: inline;
+    padding: 0 2%;
+}
+
+#chargeInformation h4, .cardContainer h4{
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    flex: 1 0 0;
+}
+
+#chargeInformation .left, #chargeInformation .right, .cardContainer .left, .cardContainer .right{
+    width: 45% !important;
+}
+
+#chargeInformation .left, .cardContainer .left{
+    float: left !important;
+    padding-left: 5%;
+}
+
+#chargeInformation label, .cardContainer label{
+    font-family: "Helvetica Bold";
+    font-size: 16px
+}
+
+#chargeInformation span, .cardContainer span{
+    font-family: "Helvetica Light";
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+#chargeInformation label, #chargeInformation span, .cardContainer label, .cardContainer span{
+    width: 50%;
+    margin: 2% 0;
+}
+
+#chargeInformation>.left>.cardInfo>label, #chargeInformation>.left>.cardInfo>span, #chargeInformation>.right>.cardInfo>label, #chargeInformation>.right>.cardInfo>span{
+    display: contents;
+} 
+
+#chargeInformation .right{
+    float: right;
+    padding-right: 5%;
+}
+
+#chargeInformation .left span{
+    float: right;
+}
+
+#chargeInformation .right span{
+    float: right;
+}
+
+.cardSeparator{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    margin: 10px auto;
+}
+
+.completeInformation{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 0 5%;
+}
+
+#noDataRandomSearch{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    text-transform: none;
+    min-height: 40px !important;
+    height: 
+}
+
+.completeInformation>label{
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+
+.completeInformation .recordInfo, .completeInformation .employerInfo, .completeInformation .locationInfo, .completeInformation .jointlyLiableInfo, .completeInformation .complaintInfo, .cardContainer .recordInfo{
+    display:block !important;
+    margin: 10px auto !important;
+    margin-top: 2px !important;
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+    min-height: 50px !important;
+    font-size: 16px !important;
+    border: 1px solid black !important;
+    float: left !important;
+    width: 100% !important;
+}
+
+.completeInformation .employerInfo label, .completeInformation .employerInfo span, .completeInformation .locationInfo label, .completeInformation .jointlyLiableInfo label, .completeInformation .locationInfo span, .completeInformation .jointlyLiableInfo span, .cardContainer .recordInfo span{
+    font-size: 14px !important;
+}
+
+.completeInformation>label{
+    display: block !important;
+    width: 100% !important;
+}
+
+.completeInformation .recordInfo .right span, .completeInformation .recordInfo .left span, .completeInformation>.employerInfo>.right>label, .completeInformation>.employerInfo>.right>span, .completeInformation>.employerInfo>.left>label, .completeInformation>.employerInfo>.left>span{
+    float: left !important;
+    width: 100% !important;
+    padding-bottom: 10px !important;
+    vertical-align: middle !important;
+}
+
+.completeInformation ["data-name"="cuit"]{
+    float:left !important;
+    width: 100%  !important;
+}
+
+.completeInformation .employerInfo ["data-name"="legalName"]{
+    float:left !important;
+    width: 100%  !important;
+}
+
+.completeInformation .employerInfo .left label, .completeInformation .locationInfo .left label, .completeInformation .jointlyLiableInfo .left label, .completeInformation .recordInfo .left label{
+    float: left !important;
+    display:inline !important;
+    width: 100% !important;
+}
+.completeInformation .employerInfo .left span, .completeInformation .locationInfo .left span, .completeInformation .jointlyLiableInfo .left span, .completeInformation .recordInfo .left span{
+    float: left !important;
+    display: inline !important;
+    width: 100% !important;
+    padding-bottom: 20px !important;
+} 
+
+.completeInformation .employerInfo .right label, .completeInformation .locationInfo .right label, .completeInformation .jointlyLiableInfo .right label, .completeInformation .recordInfo .right label{
+    float: left;
+    display:inline;
+    width: 100%;
+}
+.completeInformation .employerInfo .right span, .completeInformation .locationInfo .right span, .completeInformation .jointlyLiableInfo .right span, .completeInformation .recordInfo .right span{ 
+    float: left !important;
+    display: inline !important;
+    width: 100% !important;
+    padding-bottom: 20px !important;
+}
+
+.completeInformation>label{
+    padding-bottom: 10px;
+}
+
+.completeInformation>.employeesInfo{
+    width: 100% !important;
+    display: block !important;
+    float: left !important;
+    padding-top: 15px !important;
+    padding-bottom: 10px !important;
+    border: 1px solid black !important;
+    margin: 10px auto !important;
+    font-size: 16px !important;
+}
+
+.completeInformation>.employeesInfo>label, .completeInformation>.employeesInfo>span{
+    font-size: 14px !important;
+    float: left;
+}
+
+.completeInformation>.employeesInfo>label{
+    width: 55% !;
+    padding-left: 5%;
+}
+
+.completeInformation>.employeesInfo>span{
+    width: 35% !important;
+    padding-right: 5% !important;
+    text-align:right !important;
+    font-family: "Helvetica Medium" !important
+}
+
+.completeInformation>.complaintInfo{
+    text-align: center !important;
+    min-height: 100px !important;
+    width: 100% !important;
+    display: block !important;
+    float: left !important;
+    margin: 0px !important;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}
+
+.completeInformation>.complaintInfo>textarea{
+    width: 100%;
+    margin: auto;
+    display: block;
+    float: left;
+    border: none;
+    font-family: "Helvetica Light";
+    color: #817f5f;
+    padding-top: 10px;
+    padding-left:  5%;
+    padding-right: 5%;
+    min-height: 100px;
+    height: auto !important;
+    background-color: transparent;
+    overflow: scroll !important;
+    box-shadow: none;
+    resize: none;
+}
+
+.noDataComplaint{
+    padding-left: 10px;
+    margin-bottom: 20px;
+    font-family: "Helvetica Light";
+    font-weight: 100;
+    text-shadow: none !important;
+    height: 10px;
+    display: block;
+    float: left;
+}
+
+.noDataComplaint>h4{
+    margin-top: 0;
+    font-weight: 100;
+}
+
+#locationParams {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    display: inline;
+}
+
+#locationParams .param{
+    width: 33.3%;
+    text-align: left;
+    float: left;
+}
+
+#locationParams label, #locationParams span{
+    display: block;
+    font-size: 14px;
+    margin: auto;
+}
+
+#locationParams label{
+
+}
+
+#locationParams span{
+    padding: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+#searchLocation, #occupationDiv_worker{
+    width: 100%;
+    min-height: 35px;
+    height: 35px;
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    display: inline;
+}
+
+#searchLocation .ui-input-text, #occupationDiv_worker .ui-input-text{
+    height: 100%;
+    box-shadow: none;
+    border: 1px solid #817f5f;
+    border-radius: 0px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: "Helvetica Light";
+    font-weight: 100;
+    color: #817f5f;
+    padding-top: 0.5%;
+    margin-top: 0 !important;
+}
+
+#searchLocation input{
+    display: inline;
+    float: left;
+    text-align: left;
+    margin: auto;
+    margin-left: 10px;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
+    box-shadow: none !important;
+    background-color: transparent;
+    background-size: 4% !important;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#searchLocation input::placeholder, #occupationDiv_worker input::placeholder{
+    font-family: "Helvetica Light";
+    font-size: 14px;
+    text-shadow: none;
+    color: #817f5f;
+}
+
+
+
+#searchWorker{
+    width: 100%;
+    min-height: 35px;
+    float: left;
+    margin-top: 5%;
+    margin-bottom: 4px;
+    display: block;
+    padding-bottom: 25px;
+    height: 35px;
+}
+
+#searchWorker .ui-input-text{
+    height: 100%;
+    box-shadow: none;
+    border: 1px solid #817f5f;
+    border-radius: 0px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: "Helvetica Light";
+    font-weight: 100;
+    color: #817f5f;
+    padding-top: 0.5%;
+    margin-top: 0 !important;
+}
+
+#searchWorker input{
+    display: inline;
+    float: left;
+    text-align: left;
+    margin: auto;
+    margin-left: 10px;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
+    box-shadow: none !important;
+    background-color: transparent;
+    background-size: 4% !important;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#searchWorker input::placeholder{
+    font-family: "Helvetica Light";
+    font-size: 14px;
+    text-shadow: none;
+    color: #817f5f;
+}
+
+.shownLocationContent{
+    display: block;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid black;
+    border-radius: 0px !important;
+    background-color: white !important;
+}
+
+.shownLocationContent>.ui-collapsible-heading>a>label, .shownLocationContent>.ui-collapsible-heading>a>span{
+    font-size: 14px !important;
+    display: block;
+    float: left;
+    width: 40% !important;
+    box-shadow: none;
+    text-shadow: none;
+    color: #817f5f;
+}
+
+.shownLocationContent>.ui-collapsible-heading{
+    padding-bottom: 0 !important;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.shownLocationContent .ui-collapsible-heading a{
+    background-color: white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.shownLocationContent .ui-icon-plus, #establish .ui-collapsible-heading .ui-icon-plus , #establishLoadRandomInspection .ui-collapsible-heading .ui-icon-plus {
+    background-repeat: no-repeat;
+}
+
+.shownLocationContent .ui-icon-plus:after, #establish .ui-collapsible-heading .ui-icon-plus::after, #establishLoadRandomInspection .ui-collapsible-heading .ui-icon-plus::after{
+    box-shadow: none !important;
+    background-color: transparent;
+    background-image: url("../img/plus_icon.png");
+    background-size: 90% !important;
+    background-position: center;
+}
+
+.shownLocationContent .ui-icon-minus:after, #establish .ui-collapsible-heading .ui-icon-minus::after, #establishLoadRandomInspection .ui-collapsible-heading .ui-icon-minus::after{
+    box-shadow: none !important;
+    background-color: transparent;
+    background-image: url("../img/less_icon.png");
+    background-size: 80% !important;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.shownLocationContent a:visited{
+    color: #817f5f;
+}
+
+.shownLocationContent .ui-collapsible-content{
+    border: none !important;
+}
+
+.hiddenLocationContent{
+    border: 1px solid black !important;
+    padding: 0;
+    color: #817f5f;
+}
+
+.hiddenLocationContent .left{
+    padding-left: 0 !important;
+}
+
+
+.hiddenLocationContent .right{
+    padding-right: 0 !important;
+}
+
+.hiddenLocationContent>.cardSeparator{
+    background-color: black;
+}
+
+.hiddenLocationContent .locationInfo, .hiddenLocationContent .jointlyLiableInfo{
+    display: block;
+    float: left;
+    border: none !important;
+}
+
+.hiddenLocationContent .employerInfo{    
+    display: block;
+    float: left;
+    border: none !important;
+}
+
+.hiddenLocationContent>.employerInfo>label{
+    width: 100% !important;
+    display: block;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.hiddenLocationContent>.employerInfo>.left, .hiddenLocationContent>.employerInfo>.right{
+    width: 50% !important;
+    float: left !important;
+    display: inline !important;
+
+}
+
+.hiddenLocationContent>.employerInfo>.left>label, .hiddenLocationContent>.employerInfo>.left>span, .hiddenLocationContent>.employerInfo>.right>label, .hiddenLocationContent>.employerInfo>.right>span{
+    width: 100% !important;
+    display: block !important;
+}
+
+.hiddenLocationContent>.employeesInfo{
+    width: 100% !important;
+    display: block !important;
+    float: left !important;
+    margin: 0px auto !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hiddenLocationContent>.employeesInfo>label, .hiddenLocationContent>.employeesInfo>span{
+    display: inline;
+    float: left;
+    font-size: 14px !important;
+}
+
+.hiddenLocationContent>.employeesInfo>label{
+    width: 60% !important;
+}
+
+.hiddenLocationContent>.employeesInfo>span{
+    width: 35% !important;
+    padding-right: 5%;
+    text-align:right;
+    font-family: "Helvetica Medium" !important;
+}
+
+.chargeOptions{
+    height: 30px;
+}
+
+.button-download{
+    display: block;
+    color: white;
+}
+
+
+@media screen and (device-width: 360px){
+    #home>.ui-content, #seecharge>.ui-content, #closechargelessinspection>.ui-content, #createInspectionWithoutLoad>.ui-content, #closeLoadInspection>.ui-content, #closeLoadRandomInspection>.ui-content {
+        height: 88%;
+        padding: 45px 0px 20px 0px !important;
+    }
+
+    .app-logo{
+        margin-bottom: 0 !important;
+    }
+
+    #formLogin .ui-input-btn{
+        margin: 20px auto !important;
+    }
+
+    #forgetPasswordLink{
+        margin: 20px auto;
+        display: block !important;
+    }
+
+    #successMessageLogin, #successMessageHome, #successMessageSeeCharge, #successMessageCloseInspection{
+        font-size: 16px !important;
+    }
+
+    .card{
+        width: 90%;
+        height: auto !important;
+        background: #fff;
+        margin: 5%;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .actionNumber {
+        height: 28px;
+        font-size: 22px !important;
+        float: left !important;
+    }
+    .actionNumber label {
+        font-size: 22px !important;
+    }
+    .contentInfo {
+        width: 92%;
+        height: 119px;
+        padding: 5% 4%;
+        padding-bottom: 0;
+    }
+
+    .cardItem>.textItem{
+        width: 100%;
+        float: left;
+    }
+
+    .textItem {
+        display: block !important;
+    }
+    .icons {
+        width: 65%;
+        height: 40px;
+        padding: 5% 5% 5% 22%;
+        margin: 0 auto !important;
+        float: left;
+        display: block;
+    }
+    .actionIcon {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 20%;
+        height: 4em;
+        float: left;
+        margin: 0% 12% 0 0;
+    }
+    .main-menu nav {
+        height: 40px !important;
+        width: 100% !important;
+        color: #fff;
+        background: #95c06b !important;
+    }
+    .iconHome{
+        background-image: url(../img/home_icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2em !important;
+        margin-left: 5%;
+        margin-top: 1%;
+        height: 30px;
+    }
+    .iconBack{
+        background-image: url("../img/back_icon.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 38%;
+        border-style: none;
+        width: 10%;
+        height: 33px;
+        margin: 1% 2%;
+        float: left;
+    }
+    h4.tituloNav {
+        width: 100%;
+        text-transform: uppercase;
+        margin: 4.5% auto !important;
+        text-shadow: none;
+    }
+    .iconBack{
+        background-image: url("../img/back_icon.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 32%;
+        width: 10%;
+        height: 33px;
+        margin: 1% 2%;
+        float: left;
+        border: none;
+        border-style: none;
+
+    }
+    #home .stateconnection {
+        float: right;
+        margin-right: 7%;
+    }
+    .ui-header.ui-bar-inherit.ui-header-fixed.slidedown.ui-fixed-hidden {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    }
+    .ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+    box-shadow: 0px 8px 11px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    z-index: 5 !important;
+    }
+    .successMessageContent {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 14px;
+        line-height: 4;
+        height: 50px;
+    }
+    .alertIcon {
+        width: 40px;
+        height: 40px;
+        display: block;
+        float: left;
+        background-size: cover;
+        margin: 1.5% 0% 0% 0%;
+    }
+/*-------------------INICIO VER CARGO ---------------------*/
+    #seecharge .main-menu ul, #closechargelessinspection .main-menu ul, #createInspectionWithoutLoad .main-menu ul, #humanTrafficAnnex .main-menu ul{
+        float: left;
+        margin-left: 2%;
+        width: 10%;
+    }
+
+    #seecharge .main-menu .tituloNav, #closechargelessinspection .main-menu .tituloNav, #createInspectionWithoutLoad .main-menu .tituloNav, #hummanTrafficAnnex .main-menu .tituloNav{
+        text-align: left;
+        margin-top: 15px !important;
+    }
+    
+    #chargeInformation label, .cardContainer label{
+        font-size: 14px;
+    }
+
+    #chargeInformation span, .cardContainer span{
+        font-size: 14px;
+    }
+
+    #chargeInformation>.left>.cardInfo>label, #chargeInformation>.left>.cardInfo>span, #chargeInformation>.right>.cardInfo>label, #chargeInformation>.right>.cardInfo>span, .cardContainer>.left>.cardInfo>label, .cardContainer>.left>.cardInfo>span, .cardContainer>.right>.cardInfo>label, .cardContainer>.right>.cardInfo>span{
+        width: 100%;
+        display: block !important;
+    }
+
+     .completeInformation{
+         margin-top: 15px
+     }
+
+     
+    .completeInformation .locationInfo .left, .completeInformation .jointlyLiableInfo .left, .completeInformation .locationInfo, .completeInformation .jointlyLiableInfo .right{
+        width: 50%;
+    }
+
+
+    .completeInformation .employerInfo, .completeInformation .locationInfo, .completeInformation .jointlyLiableInfo, .completeInformation .complaintInfo, .completeInformation .employerInfo, .completeInformation .locationInfo, .completeInformation .jointlyLiableInfo, .completeInformation .complaintInfo, .cardContainer .recordInfo{
+        font-size: 14px !important;
+    } 
+
+    .completeInformation .employerInfo label, .completeInformation .employerInfo span, .completeInformation .locationInfo label, .completeInformation .jointlyLiableInfo label, .completeInformation .locationInfo span, .completeInformation .jointlyLiableInfo span, .cardContainer .recordInfo label, .cardContainer .recordInfo span{
+        font-size: 12px !important;
+    }
+
+    .completeInformation>.employeesInfo>label, .completeInformation>.employeesInfo>span{
+        font-size: 12px !important;
+        float: left;
+    }
+
+    .completeInformation>.employeesInfo>label{
+        width: 80%;
+    }
+
+    .completeInformation>.employeesInfo>span{
+        width: 15%;
+        padding-left: 5%
+    }
+
+    #locationParams {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 100%;
+        display: inline;
+    }
+
+    #locationParams .param{
+        width: 33.3%;
+        text-align: left;
+        float: left;
+    }
+
+    #locationParams label, #locationParams span{
+        display: block;
+        font-size: 12px !important;
+        margin: auto;
+    }
+
+    #locationParams span{
+        padding: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    .completeInformation>.complaintInfo{
+        text-align: center;
+        min-height: 100px;
+        width: 100%;
+        display: block;
+        float: left !important;
+        margin: 0px;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+    }
+
+    .completeInformation>.complaintInfo>textarea{
+        width: 100%;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .noDataComplaint{
+        font-size: 14px
+    }
+
+    .shownLocationContent>.ui-collapsible-heading>a>label, .shownLocationContent>.ui-collapsible-heading>a>span, .cardRelievedWorkerData_workersAnnex {
+        font-size: 12px !important;
+        display: block;
+        float: left;
+        width: 100% !important;
+    }
+
+    .shownLocationContent>.ui-collapsible-heading>a>label{
+        margin-top: 5px !important;
+    }
+    
+    .hiddenLocationContent>.cardSeparator{
+        background-color: black;
+    }
+    
+    .hiddenLocationContent .locationInfo .left , .hiddenLocationContent .jointlyLiableInfo .left{
+        padding-left: 0 !important;
+    }   
+
+     .hiddenLocationContent .locationInfo .right, .hiddenLocationContent .jointlyLiableInfo .right{
+        padding-right: 0 !important;
+    }   
+
+    .hiddenLocationContent>.employeesInfo{
+        float: left !important;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .hiddenLocationContent>.employeesInfo>label{
+        width: 40% !important;
+    }
+
+    .hiddenLocationContent>.employeesInfo>span{
+        width: 25% !important;
+        padding-left: 0;
+        text-align:right;
+    }
+
+    .hiddenLocationContent>.employeesInfo>label, .hiddenLocationContent>.employeesInfo>span {
+        font-size: 12px !important;
+        display: inline;
+    }
+
+    #createInspectionWithoutLoad > .ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+        height: 40px !important;
+        position: fixed;    
+    }
+     #createInspectionWithoutLoad > .ui-grid-solo {
+        float: left;
+    }
+    #options-menu-seecharge {
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+    #options-menu-workersAnnex {
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+    .main-menu ul {
+        width: 150px;
+        margin: 0;
+        float: left !important;
+    }
+    h4.tituloNav {
+        width: 100% !important;
+        margin: 18px 0 !important;
+        text-transform: uppercase !important;
+        text-shadow: none !important;
+        z-index: -50 !important;
+        position: absolute !important;
+    }
+    .ui-navbar {
+        margin: 0px !important;
+    }    
+    #select-37-button {
+        border-radius: 0px !important;  
+        border: solid #000 2px;  
+        text-align: left;
+    }
+    h4 {
+        margin: 0px;
+        float: left;
+        width: 50%;
+    }
+    .actioNumber {
+        font-size: x-large;
+        float: left;
+        display: block;
+        width: 48%;
+    }
+    .box {
+        width: 95% !important;  
+        background: #fff;  
+        padding: 2% 2%;
+        height: 55px;
+        border: solid #333 2px;
+        margin-bottom: 2%;
+    }
+    #borderInputs{
+        border: solid #333 2px;
+        background-color: #fff;
+        border-radius:: 0px;
+    }  
+    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inseat {
+        border-style: none
+    }
+    #createInspectionWithoutLoad > .ui-grid-solo {
+        float: left;
+    }
+    #options-menu-seecharge {
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    #options-menu-workersAnnex {
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .ui-navbar {
+        margin: 0px !important;
+    }    
+    .ui-content > h3 {
+        margin: 5%;
+    }
+    #select-37-button {
+        border-radius: 0px !important;  
+        border: solid #000 2px;  
+        text-align: left;
+    }
+    .actioNumber {
+        font-size: x-large;
+        float: left;
+        display: block;
+        width: 48%;
+    }
+    .box {
+        width: 95%;  
+        background: #fff;  
+        padding: 2% 2%;
+        height: 11vh;
+        border: none;
+        margin-bottom: 2%;
+    }   
+    form#insLoad_formCaracter {
+        margin-top: 10%;
+    } 
+    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+        width: 100%;
+        float: left;
+        height: 30px;
+        margin: 0;
+    }
+    #createInspectionWithoutLoad > #text-basic1 {
+        padding: 0.5%;
+    }
+    .box #text-basic1 {
+        padding: 0.5%;
+    }
+    div#one,div#two,div#three, div#humantraffic, div#workconditions, div#childlabor {
+        background: #f5f5f5;
+        margin-top: 0px;
+    }
+    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset.ui-focus input {
+        padding: 2%;
+    }  
+/*    #ui-id-1, #ui-id-2, #ui-id-3 {
+        -webkit-box-shadow: 0 0 12px #8cad63 !important;
+        -moz-box-shadow: 0 0 12px #38c !important;
+        box-shadow: 0 0 12px #8cad63 !important;
+        border-color: #8cad63 !important;
+        color: #fff !important;
+        background: #AAC785 !important;
+        text-shadow: none !important;
+    }*/
+    form > .leftInputs {
+        width: 100% !important;
+        height: 70px;
+    }
+
+    #formWithoutLoad .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    #formWithoutLoad label {
+        margin: 0;
+    }
+    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset.midCamp {
+        width: 50%;
+    }
+    .ui-field-contain {
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .ui-listview {
+        padding: 1% 5% !important;
+    }
+    .formNewEstablishment{
+        width: 580px;
+    }
+    .formNewWorker{
+        width: 580px;
+    }
+
+    .iconMasEstablish{
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        margin: 14% 1%;
+        background-image: url(../img/see_charge_icon.png);
+    }
+    .iconMenosEstablish{
+        width: 25px;
+        height: 25px;
+        background-size: 100%;
+        margin: 14% 1%;
+        background-image: url(../img/less_icon.png);
+        background-repeat: no-repeat;
+        background-position: 94%;
+    }
+    .checkEstablishmentSelected{
+        margin: 15% 2% !important;
+        width: 20px !important;
+        height: 20px !important;
+        position: relative !important;
+        float: right;
+    }
+    .textInputSearch{
+        width: 87%;
+        float: left;
+    }
+    .iconInputSearch{
+        height: 30px !important;
+        margin-top: -32px !important;
+        margin-right: -0.9% !important; 
+    } 
+    .resizeRsps{
+        width: 64vw;
+        min-height: 80px;
+        margin-bottom: 5%
+    } 
+    .inputTextRadioOtro{
+        position: absolute !important;
+        top: 19% !important;
+        width: 81% !important;
+        left: 14% !important;
+    }
+    .contentRadioOtro{
+        width: 7%;
+        float: left;
+        line-height: 2.5;
+    }  
+    .spanText {
+        border: solid rgb(71, 70, 70) 1px;  
+        width: 95% !important;  
+        display: block;  
+        padding: 2% 2% 0% 2%;
+    }
+    .left.label {
+        font-size: smaller;  
+        width: 96%;
+    }
+
+    .radioWithText{
+        width: 100%;
+        float: left !important;
+    }
+    .textRadioOtro {
+        width: 60%;
+        float: left !important;
+        position: absolute;
+        z-index: 5;
+        right: 8%;
+        margin-top: 2%;
+    }
+    #listResps {
+        float: left;  
+        margin-bottom: 5%;
+        width: 89%;
+    }
+    #listResps h3 {
+        margin: 2% 0;
+    }
+    .ui-collapsible-heading.ui-collapsible-heading-collapsed a{
+        min-height: 5.5vh;
+        line-height: 2;
+    }
+    .ui-collapsible-heading-toggle.ui-btn.ui-btn-icon-right.ui-btn-inherit.ui-icon-minus {
+        height: 2em;
+        line-height: 2;
+        text-align: center;
+    }
+    .left {
+        width: 100% !important;
+        display: block !important;
+        font-size: 13px !important;
+        margin: 0px !important;
+    }
+    .checkEstablishmentSelected.right {
+        right: -44px;    
+    }
+    #establish .ui-collapsible-heading>a>span, #establishLoadRandomInspection .ui-collapsible-heading>a>span, .cardRelievedWorkerData_workersAnnex .ui-collapsible-heading>a>span{
+        font-family: "Helvetica Light";
+        font-size: 13px !important;
+        width: 100%;
+    }      
+    .checkEstablishmentSelected.right {
+        left: -0.534em !important;
+    }    
+    #searchLocation {
+        width: 99.5% !important;
+        margin-bottom: 2px;
+    }
+    
+    #searchWorker {
+        width: 99.5% !important;
+        margin-bottom: 2px;
+    }
+
+    .cardItem {
+        width: 90% !important;
+        display: block !important;
+        float: left;
+    }
+    .leftLabel {
+        margin-top: 0px !important;
+        width: 100% !important;
+        display: block !important;
+        float: left !important;
+    }
+    .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset {
+        width: 100% !important;
+        float: left !important;
+        height: 30px;
+    } 
+    #campGeoreference1 {
+        min-height: 5vh;
+    }
+    .leftLabel {
+        height: 16px !important;
+        margin-bottom: 0% !important;
+        display: block !important;
+    }   
+    a.actionIcon[spinner="true"] {
+        background-image: url("../img/loading_circle_icon.gif");
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }   
+    a[spinner="true"] {
+        background-image: url("../img/loading_circle_icon.gif");
+        background-repeat: no-repeat;
+        background-size: 60%;
+    }
+    #loadInspection h4.tituloNav, #loadRandomInspection h4.tituloNav, #createEmployeesAnnex h4.tituloNav, #workersAnnex h4.tituloNav  {
+        font-size: 12px;
+    }
+
+    #loadInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #loadRandomInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #createEmployeesAnnex .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #workersAnnex .ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
+        padding: 1em;
+    }
+
+    #loadInspection .recordCard, #loadRandomInspection .recordCard {
+        margin-top: 5%!important;
+    }
+    #loadInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #loadRandomInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #createEmployeesAnnex .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #workersAnnex .ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
+        padding: 0;
+        border-radius: 0;
+        padding-bottom: 1em;
+    }
+    #loadInspection #four, #loadInspection #five, #loadInspection #six, #loadRandomInspection #four, #loadRandomInspection #five, #loadRandomInspection #six, #createEmployeesAnnex #four, #createEmployeesAnnex #five, #createEmployeesAnnex #six, #workersAnnex #four, #workersAnnex #five, #workersAnnex #six{
+        background: #fff;
+    }
+
+    #loadInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #loadRandomInspection .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #createEmployeesAnnex .ui-tabs.ui-widget.ui-widget-content.ui-corner-all, #workersAnnex .ui-tabs.ui-widget.ui-widget-content.ui-corner-all {
+        padding: 0 0 10px;
+        width: 90%;
+        margin: 0 auto;    
+    }
+    #loadInspection .btnNextDiv, #loadRandomInspection .btnNextDiv, #createEmployeesAnnex .btnNextDiv {
+        padding-bottom: 1%; 
+    }
+}
+
+
+/*-----------------------------------------------------------*/
+
+/*#createInspectionWithoutLoad .ui-content{
+    margin-top: 60px;
+}
+*/
+.tablist-left {
+    width: 25%;
+    display: inline-block;
+}
+.tablist-content {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+}
+
+.recordCard, .cardRelievedWorkerData_workersAnnex, .cardRegisteredWorkerData_workersAnnex{
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #817f5f;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    height: 15em;
+    margin: 5% auto;
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.recordCard h3{
+    margin-bottom: 0px !important;
+}
+
+#campRecordType-button, #campRecordType_loadInspection-button, #campRecordType_loadRandomInspection-button, #campProvince_loadRandomInspection-button, #campProvince_loadInspection-button, #campProvince-button, #createInspectionWithoutLoad #two  div.ui-select > div, #humanTrafficQuestions .ui-select > div, #workconditions div.ui-select > div, #childLaborQuestions div.ui-select > div,  .cardRelievedWorkerData_workersAnnex .ui-select div, .cardRegisteredWorkerData_workersAnnex .ui-select div, #employmentType_worker-button, #frequencySalary_worker-button, #loadRandomInspection .ui-btn.ui-icon-carat-d.ui-btn-icon-right.ui-corner-all.ui-shadow {
+    box-shadow: none;
+    background-color: white !important;
+    border: 1px solid #817f5f !important;
+    border-radius: 0;
+    padding-right: 0;
+    padding-top: 7.5px;
+    padding-bottom: 2.5px;
+    margin-top: 0px;
+    font-family: "Helvetica Light";
+    font-size: 14px;
+    color: #817f5f !important;
+    text-align: left;
+}
+
+#campRecordType-button::after, #campRecordType_loadInspection-button::after, #campRecordType_loadRandomInspection-button::after, #campProvince_loadInspection-button::after, #campProvince-button::after, , #createInspectionWithoutLoad #two  div.ui-select > div::after, #campProvince_loadRandomInspection-button::after, #humanTrafficQuestions .ui-select div::after, #workConditionsQuestions .ui-select div::after, #childLaborQuestions .ui-select div::after, .cardRelievedWorkerData_workersAnnex .ui-select div::after, .cardRegisteredWorkerData_workersAnnex .ui-select div::after,  #employmentType_worker-button::after, #frequencySalary_worker-button::after, #loadRandomInspection .ui-btn.ui-icon-carat-d.ui-btn-icon-right.ui-corner-all.ui-shadow::after {
+    background-image: url(../img/arrow_down_square.png);
+    background-size: 120% !important;
+    right: 0px !important;
+    border-radius: 0;
+    height: 100%;
+    width: 5%;
+    margin-top: -14.5px;
+    margin-right: -1px;
+    padding-right: 0 !important;
+}
+
+.recordCard .box{
+    display: block !important;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+.recordCard .box h4{
+    display: inline !important;
+    margin-top: 0px;
+}
+
+.recordCard .box div{
+    display: block;
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    font-family: "Helvetica Light";
+    font-size: 16px
+}
+
+.leftInputs{
+    margin-right: 2%;
+    width: 100%;
+    float: left;
+}
+
+#two .leftInputs{
+    width: 100%;
+    float: left;
+    display: block
+}
+
+#formWithoutLoad3 .leftInputs {
+    margin-right: 2%;
+    width: 100%;
+    float: left;
+}
+.recordCard .box .right{
+    width: 48%;
+    float: right;
+    margin-bottom: 0
+
+}
+
+.campUserIdLabel{
+    float: left;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    width: 100%;
+
+}
+
+.campUserIdLabel_loadRandomInspection{
+    float: left;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.campUserIdLabel_loadInspection{
+    float: left;
+    margin-top: 10px !important;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+a.ui-btn-active {
+    background-color: #97B539 !important;
+}
+
+
+div#one, div#two, div#three div#four, div#five, div#six, div#humantraffic, div#workconditions, div#childlabor {
+    background: white;
+    background-color: white;
+    width: 90%;
+    min-height: 120px;
+    margin: 3% auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #817f5f;
+    padding: 5%;
+    font-family: "Helvetica Bold";
+    font-size: 14px;
+}
+
+#one h3, #two h3, #three h3, #humantraffic h3, #workconditions h3, #childlabor h3{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#one.ui-content, #two.ui-content, #three.ui-content, #humantraffic.ui-content, #workconditions.ui-content, #childlabor.ui-content {
+    margin-top: 30px;
+}
+
+#one label,#two label,#three label, #three legend, #humantraffic label, #workconditions label, #childlabor label, #formWorkersAnnex1 label, #formWorkerAnnex2 label{
+    font-size: 12px !important;
+    margin-bottom: 0;
+    margin-top: 10px;
+    z-index: 0;
+    color: #817f5f !important;
+}
+
+#one .ui-input-text,#two .ui-input-text,#three .ui-input-text, #formWorkersAnnex1 .ui-input-text, #formWorkerAnnex2 .ui-input-text{
+    font-size: 14px !important;
+    font-family: "Helvetica Light";
+    color: #817f5f;
+    margin-top: 5px;
+    border: 1px solid #817f5f;
+    border-radius: 0;
+    box-shadow: none !important;
+}  
+
+.ui-header.ui-bar-inherit.ui-header-fixed.slidedown {
+    background-color: #97B539;
+}
+
+#ui-id-1, #ui-id-2, #ui-id-3 {
+    box-shadow: none;
+    border-color: #817f5f;
+    color: #fff;
+    text-shadow: none;
+    font-size: 10px;
+}
+
+#createInspectionWithoutLoad .ui-tabs{
+    padding-left: 0;
+    padding-right: 0;
+    padding: 5%;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+#createInspectionWithoutLoad .ui-navbar{
+    margin-top: 10px;
+}
+
+#createInspectionWithoutLoad .ui-navbar .ui-state-disabled, #loadInspection .ui-navbar .ui-state-disabled{
+    opacity: 1;
+}
+
+#createInspectionWithoutLoad .ui-navbar  li[aria-selected="true"] a, #loadInspection .ui-navbar  li[aria-selected="true"] a, #loadRandomInspection .ui-navbar  li[aria-selected="true"] a, #humanTrafficAnnex .ui-navbar li[aria-selected="true"] a{
+    background-color: #817f5f !important;
+    color: white !important;
+    border-color: #817f5f;
+}
+
+#borderInputs{
+    border: solid #333 2px;
+    background-color: #fff;
+    border-radius: 0px;
+}
+
+#establish>.ui-collapsible, #establishLoadRandomInspection>.ui-collapsible, .cardRegisteredWorkerData_workersAnnex .ui-collapsible, .cardRelievedWorkerData_workersAnnex .ui-collapsible{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+#establish .ui-collapsible-heading, #establishLoadRandomInspection .ui-collapsible-heading{
+    background-color: transparent !important;
+    box-shadow: none;
+    float: left;
+    width: 100% !important;
+    display: block;
+}
+
+#establish .ui-collapsible-heading-collapsed, #establishLoadRandomInspection .ui-collapsible-heading-collapsed, .cardRegisteredWorkerData_workersAnnex .ui-collapsible-heading-collapsed, .cardRelievedWorkerData_workersAnnex .ui-collapsible{
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+#establish .ui-collapsible-heading .left, #establishLoadRandomInspection .ui-collapsible-heading .left{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    float: left !important;
+
+}
+
+#establish .ui-collapsible-heading label, #establish .ui-collapsible-heading span, #establishLoadRandomInspection .ui-collapsible-heading label, #establishLoadRandomInspection .ui-collapsible-heading span{
+    float: left;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-shadow: none !important;
+}
+
+#establish .ui-collapsible-heading>a>label, #establishLoadRandomInspection .ui-collapsible-heading>a>label{
+    font-family: "Helvetica Bold";
+    font-size: 12px !important;
+    width: 27% !important;
+}
+
+
+#establish .ui-collapsible-heading>a>span, #establishLoadRandomInspection .ui-collapsible-heading>a>span{
+    font-family: "Helvetica Light";
+    font-size: 12px !important;
+    width: 50%;
+}
+
+#establish .ui-collapsible-heading a, #establishLoadRandomInspection .ui-collapsible-heading a{
+    height: 40px;
+    border: 1px solid #817f5f;
+    border-radius: 0;
+    background-color: transparent;
+    padding-right: 10%;
+    min-height: 4em;
+}
+
+#establish .ui-collapsible-heading a, #two .ui-collapsible-heading a, #establishLoadRandomInspection .ui-collapsible-heading a, .cardRegisteredWorkerData_workersAnnex .ui-collapsible-heading a, .cardRelievedWorkerData_workersAnnex .ui-collapsible-heading a{
+    color: #817f5f !important;
+    font-family: "Helvetica Bold" !important;
+    font-size: 14px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+#two .ui-collapsible-heading .ui-icon-plus::after, .cardRelievedWorkerData_workersAnnex .ui-collapsible-heading>a>span{
+    box-shadow: none !important;
+    background-color: transparent;
+    background-image: url("../img/add_circle_grey.png");
+    background-size: 100% !important;
+    background-position: left center;
+    margin-right: 10px;
+}
+
+#establish .ui-collapsible-heading .ui-checkbox input::after{
+    text-shadow: none !important;
+    box-shadow: none !important;
+    margin-left: 4px;
+}
+
+#establish .ui-collapsible-heading .ui-checkbox-on::after{
+    background-color: transparent !important;
+    background-image: initial !important;
+    background-color: black;
+    box-shadow: none;
+}
+
+#establish .ui-collapsible-content{
+    border: 1px solid #817f5f;
+    border-radius: 0;
+    padding: 20px;
+}
+
+#establish .ui-collapsible-content .cardItem, #establishLoadRandomInspection .ui-collapsible-content .cardItem{
+    border-radius: 0;
+    display: inline-block !important;
+    width: 40% !important;
+    margin: 5% 20px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+#establish .ui-collapsible-content .cardItem label, #establish .ui-collapsible-content .cardItem .ui-input-text, #establishLoadRandomInspection .ui-collapsible-content .cardItem label, #establishLoadRandomInspection .ui-collapsible-content .cardItem .ui-input-text{
+    width: 100%;
+}
+
+#establish .ui-collapsible-content label, #establish .ui-collapsible-content .ui-input-text, #establishLoadRandomInspection .ui-collapsible-content label, #establishLoadRandomInspection .ui-collapsible-content .ui-input-text{
+    float: left;
+    display: inline-flex;
+}
+
+#establish .ui-collapsible-content .leftLabel, #establish .ui-collapsible-content .leftInput, #establishLoadRandomInspection .ui-collapsible-content .leftLabel, #establishLoadRandomInspection .ui-collapsible-content .leftInput{
+
+}
+
+#establish .ui-collapsible-content .rightLabel, #establish .ui-collapsible-content .rightInput, #establishLoadRandomInspection .ui-collapsible-content .rightLabel, #establishLoadRandomInspection .ui-collapsible-content .rightInput{
+    float: right;
+}
+
+#establish .ui-collapsible-content .leftLabel, #establish .ui-collapsible-content .leftInput, .ui-collapsible-content .rightLabel, #establish .ui-collapsible-content .rightInput{
+    width: 100%;
+    
+}
+
+#establish .ui-collapsible-content .leftLabel, #establish .ui-collapsible-content .leftInput, #establishLoadRandomInspection .ui-collapsible-content .leftLabel, #establishLoadRandomInspection .ui-collapsible-content .leftInput{
+    border: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#establish .ui-collapsible-content, #two .ui-collapsible-content, #establishLoadRandomInspection .ui-collapsible-content{
+    color: #817f5f;
+}
+
+#establish .ui-collapsible-content label, #two .ui-collapsible-content label, #establishLoadRandomInspection .ui-collapsible-content label{
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+}
+
+#establish .ui-collapsible-content label, #establishLoadRandomInspection .ui-collapsible-content label{
+    margin-top: 25px;
+    width: 50%;   
+}
+
+#establish .ui-collapsible-content .ui-input-text, #two .ui-collapsible-content .ui-input-text, #establishLoadRandomInspection .ui-collapsible-content .ui-input-text{
+    color: #817f5f;
+    box-shadow: none;
+
+}
+
+#establish .ui-collapsible-content .ui-input-text, #establishLoadRandomInspection .ui-collapsible-content .ui-input-text{
+    margin-top: 0;
+    width: 50%;
+}
+
+.activityItem{
+   height: unset !important;
+   margin-bottom: 0 !important;
+}
+
+#activityDiv, .activityDiv, #activityDiv_loadInspection, #activityDiv_loadRandomInspection, #occupationDiv_worker{
+    width: 100%;
+    float: right;
+    display: block;
+    box-shadow: none;
+}
+
+#activityDiv .ui-input-search, .activityDiv .ui-input-search, #activityDiv_loadInspection .ui-input-search, #activityDiv_loadRandomInspection .ui-input-search, .cardRelievedWorkerData_workersAnnex .ui-input-search, .cardRegisteredWorkerData_workersAnnex .ui-input-search{
+    border: 1px solid #817f5f;
+    border-radius: 0;
+    box-shadow: none;
+    background-image: transparent;
+}
+
+.activityDiv .ui-input-search, #activityDiv_loadInspection .ui-input-search, #activityDiv_loadRandomInspection .ui-input-search{
+    margin-top: 0
+}
+
+#activityDiv .ui-input-search input::placeholder, .activityDiv .ui-input-search input::placeholder, #activityDiv_loadInspection .ui-input-search input::placeholder, #activityDiv_loadRandomInspection .ui-input-search input::placeholder, .cardRelievedWorkerData_workersAnnex .ui-input-search input::placeholder, .cardRegisteredWorkerData_workersAnnex  .ui-input-search input::placeholder{
+    font-family: "Helvetica Light";
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #817f5f;
+    font-size: 14px ;
+}
+
+.activityDiv .ui-input-search{
+    padding-right: 0;
+}
+
+.activityDiv .ui-input-search input::placeholder{
+    font-size: 12px !important;    
+}
+
+#activityDiv .ui-input-search::after, .activityDiv .ui-input-search::after, #activityDiv_loadInspection .ui-input-search::after, #activityDiv_loadRandomInspection .ui-input-search::after, .cardRelievedWorkerData_workersAnnex .ui-input-search::after, .cardRegisteredWorkerData_workersAnnex .ui-input-search::after{
+    background-image: url(../img/search_icon.png);
+    background-size: contain;
+    background-color: transparent;
+    opacity: 1;
+}
+
+#activityDiv .ui-input-search input, .activityDiv .ui-input-search input, #activityDiv_loadInspection .ui-input-search input, #activityDiv_loadRandomInspection .ui-input-search input{
+    font-family: "Helvetica Medium";
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #817f5f
+}
+
+#activityDiv .ui-icon-delete::after, .activityDiv .ui-icon-delete::after, #activityDiv_loadInspection .ui-icon-delete::after, #activityDiv_loadRandomInspection .ui-icon-delete::after, .cardRelievedWorkerData_workersAnnex .ui-icon-delete::after, .cardRegisteredWorkerData_workersAnnex .ui-icon-delete::after{
+    background-color: #817f5f;
+    background-image: url(../img/cancel_icon_white.png);
+    background-size: contain;
+
+}
+
+.activityDiv .ui-icon-delete::after, .cardRelievedWorkerData_workersAnnex .ui-icon-delete::after, .cardRegisteredWorkerData_workersAnnex .ui-icon-delete::after{
+    background-size: 60%;
+}
+
+#activityDiv .ui-icon-delete, .activityDiv .ui-icon-delete, #activityDiv_loadInspection .ui-icon-delete, #activityDiv_loadRandomInspection .ui-icon-delete{
+    background-color: #817f5f;
+}
+
+#activityDiv li, .activityDiv li, #activityDiv_loadInspection li, #activityDiv_loadRandomInspection li, #occupationList_worker li{
+    background-color: white !important;
+    background-image: none;
+    margin: 0 !important;
+    box-shadow: none;
+}
+
+#activityDiv li a, .activityDiv li a,#activityDiv_loadInspection li a, #activityDiv_loadRandomInspection li a, #occupationList_worker li a{
+    color: #817f5f !important;
+    font-family: "Helvetica Medium" !important;
+    font-weight: lighter !important;
+    font-size: 10px !important;
+    white-space: normal !important;
+    padding-top: 10px !important;
+    background-color: white !important;
+    border: 1px solid #817f5f !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: block;
+    z-index: 1;
+}
+
+#activityDiv li a::after, .activityDiv li a::after, #activityDiv_loadInspection li a::after, #activityDiv_loadRandomInspection li a::after, #occupationList_worker li a::after{
+    background-image: url(../img/arrow_right_circle.png);
+    background-size: contain;
+    background-color: white;
+}
+
+#activityDiv .ui-btn-icon-right, .activityDiv .ui-btn-icon-right, #activityDiv_loadInspection.ui-btn-icon-right, #activityDiv_loadRandomInspection.ui-btn-icon-right, #occupationList_worker .ui-btn-icon-right{
+    padding-right: 3.5em !important
+}
+
+#activityInfo, .activityInfo, #activityInfo_loadInspection, #activityInfo_loadRandomInspection, #cityInfo_loadRandomInspection, #cityInfo_loadInspection, #cityInfo, #occupationInfo_worker{
+    background-color: white !important;
+    border: 1px solid #817f5f !important;
+    border-radius: 0 !important;
+    color: #817f5f !important;
+    font-family: "Helvetica Medium" !important;
+    font-weight: lighter !important;
+    font-size: 14px !important;
+    padding-top: 15px !important;
+    opacity: 1 !important;
+    white-space: normal !important;
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+#campLocation, .buttonGeoreference, #campLocation_loadInspection, #campLocation_loadRandomInspection{
+    background-color: transparent !important;
+    background-image: url(../img/Geo.png);
+    background-repeat: no-repeat;
+    background-position: 98% center;
+    background-size: 15px !important;
+    margin-top: 5px;
+    border: 1px solid #817f5f !important;
+    color: #817f5f !important;
+    border-radius: 0 !important;
+    min-height: 2.2em;
+    font-family: "Helvetica Light";
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    line-height: 0.7em;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.buttonGeoreference{
+    background-size: 7%
+}
+
+.btnNextDiv{
+    display: block;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.iconUpdate{
+    margin-right: 0;
+    vertical-align: middle;
+    width: 5%;
+    padding-right: 5px;
+}
+
+.update_charges{
+    width: 90%; 
+    margin: 0 auto;
+}
+ 
+.btn_update_charges {
+    white-space: normal;
+    height: auto;
+    font-size: 13px;
+    width: 90%;
+    margin: 0 auto;
+    background: #95c06b !important;
+    color: #fff !important;
+    border-color: #95c06b!important;
+    margin-bottom: 5%;
+}
+button#updateChargesList {
+    background-color: #817e5f !important;
+    border-color: #817e5f !important;
+    margin: 5% 0;
+    text-shadow: none;
+}
+
+#card0 {
+    margin-top: 0 !important;
+}
+.textInputSearch{
+    width: 87%;
+    float: left;
+}
+.iconInputSearch{
+    background-image: url("../img/search_icon.png");
+    width: 31px;
+    height: 31px;
+    float: right;
+    background-size: 70%;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: sticky;
+    display: inline;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: -45px;
+    border: 1px solid #817f5f;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-right: none;
+}
+
+a[spinner="true"] {
+    background-image: url("../img/loading_circle_icon.gif");
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+
+#two .shownLocationContent .ui-collapsible-heading-collapsed{
+    margin-bottom: 0
+} 
+  
+.nextStep {
+    width: 40%;
+    margin: 0 auto;
+    background: #95c06b !important;
+    color: #fff !important;
+    border-color: #95c06b!important;
+    margin-bottom: 5%;
+    font-size: small;
+    text-shadow: none !important;
+}
+.ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inseat {
+    border-style: none !important;
+}
+
+.ui-page-theme-a .ui-btn:focus, html .ui-bar-a .ui-btn:focus, html .ui-body-a .ui-btn:focus, html body .ui-group-theme-a .ui-btn:focus, html head+body .ui-btn.ui-btn-a:focus, .ui-page-theme-a .ui-focus, html .ui-bar-a .ui-focus, html .ui-body-a .ui-focus, html body .ui-group-theme-a .ui-focus, html head+body .ui-btn-a.ui-focus, html head+body .ui-body-a.ui-focus {
+    -webkit-box-shadow: 0 0 12px #817f5f;
+    -moz-box-shadow: 0 0 12px #817f5f;
+    box-shadow: 0 0 12px #817f5f;
+}
+.ui-field-contain {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+.ui-btn.ui-shadow.viewIcon {
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 3%;
+    background-color: #95c06b;
+    color: #fff;
+    border-color: #95c06b !important;
+}
+
+
+
+a.ui-link.ui-btn.ui-btn-a.ui-tabs-anchor {
+    background-color: #817f5f !important;
+    color: white !important;
+    border-color: #817f5f;
+    text-shadow: none !important;
+}
+
+a.ui-link.ui-btn.ui-btn-a.ui-tabs-anchor{
+        background: white !important;
+        color: #817f5f !important;
+}
+ul#formWithoutLoad1_loadRandomInspection {
+    list-style: none;
+}
+
+.btnEstablishmentPage {
+    width: 15px;
+    float: left;
+    margin: 0.353%;
+}
+.btnEstablishmentPageActive {
+    background-color: #6e6833 !important;
+}
+#establishShow{
+    text-align: center;
+    padding: 2%;
+    width: 96%;
+    float: left;
+}
+.newEstablishmentFormStyle0{
+    overflow: hidden;
+    height: 0px;
+    transition: all 1s;
+}
+.newEstablishmentFormStyle1{
+    overflow: hidden;
+    height: 360px;
+    transition: all 1s;
+}
+#formWithoutLoad2, #formWithoutLoad2_loadInspection, #formWithoutLoad2_loadRandomInspection{
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+    width: 100%;
+}
+
+#formWithoutLoad2 li, #formWithoutLoad2_loadInspection li, #formWithoutLoad2_loadRandomInspection li{
+    display: inline-block;
+    width: 100%;
+}
+
+
+#formWorkesAnnex1{
+    list-style-type: none;
+    padding: 0;
+    /*display: inline;*/
+    width: 100%;
+    margin: 5px;
+}
+
+#formWorkerAnnex2 {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#formWithoutLoad3{
+    margin-top: 20px;
+}
+
+#formWithoutLoad3 .ui-radio{
+    background-color: transparent;
+    font-family: "Helvetica Light";
+}
+
+#formWithoutLoad3 .ui-radio label{
+    background-color: transparent;
+    font-family: "Helvetica Light";
+    font-size: 14px;
+    color: #817f5f;
+    letter-spacing: 0.1em;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border: none;
+    height: 100%;
+}
+
+#formWithoutLoad3 .ui-radio input {
+    left: 0;
+    box-shadow: none;
+    border: 0;
+    display: none;
+}
+
+#formWithoutLoad3 .ui-radio-off:after {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/not_selected_circle.png) !important;
+    background-color: white;
+    opacity: 1;
+    background-size: 100%;
+    background-position: center !important;
+    margin-top: -16px;
+    padding-left: 0px;
+    top: 50%
+}
+
+
+#formWithoutLoad3 .ui-radio-on:after {
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/selected_circle.png);
+    background-size: 100%;
+    background-position: center !important;
+    padding-left: 0px;
+    border: 1px solid #817f5f;
+    margin-top: -16px;
+    
+}
+
+#formWithoutLoad3 .ui-radio label::after{
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: 0;
+}
+
+#formWithoutLoad3 .ui-radio .ui-last-child span, #formWithoutLoad3 .ui-radio .ui-last-child .ui-input-text{
+    display: inline !important;
+    float: left;
+    min-height: 100%;
+}
+
+#formWithoutLoad3 .ui-radio span, #formWithoutLoad3 .ui-radio label{
+    margin-top: 10px;
+    width: 50% !important
+}
+
+#formWithoutLoad3 .ui-radio .ui-last-child span{
+    margin-top: 10px;
+    width: 15% !important
+}
+
+#formWithoutLoad3 .ui-radio .ui-last-child .ui-input-text{
+    height: 20px;
+    width: 70%;
+}
+
+
+.closeNewEstablishment {
+    background-image: url(../img/cancel_icon_black.png);
+    width: 20px;
+    height: 20px;
+    float: right;
+    display: block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 4% 4%;
+}
+.ui-collapsible-heading {
+    width: 100%;
+}
+.ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content.ui-collapsible-collapsed {
+    width: 100%;
+}
+div#new_loadRandomInspection {
+    padding-bottom: 5%;
+}
+#three .btnNextDiv{
+    width: 100%;
+    margin: .5em 0
+}
+
+#btnAgregarRespLista, #btnAgregarRespLista_loadInspection, #btnAgregarRespLista_loadRandomInspection{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 18px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: #817f5f !important;
+    border-color: #817f5f !important;
+    background-image: url(../img/add_circle_white.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 25% 50% !important;
+    font-family: "Helvetica Medium";
+    font-size: 16px;
+    font-weight: 100;
+    text-shadow: none;
+    letter-spacing: 0.05em;
+}
+/*
+#btnEnviarRelevamiento{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 18px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    margin-bottom: 0;
+    background-color: #817f5f !important;
+    background-repeat: no-repeat !important;
+    background-position: 25% 50% !important;
+    font-family: "Helvetica Medium";
+    font-size: 16px;
+    font-weight: 100;
+    text-shadow: none;
+    letter-spacing: 0.05em;
+}
+*/
+/*----------------------- CLOSE INSPECTION ------------------------------------*/
+
+.bottom-arrow, .top-arrow{
+    display: block;
+    position: absolute;
+    right: 8%;
+    float: right;
+    width: 30px !important;
+    height: 30px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: transparent;
+    border: none;
+}
+
+.bottom-arrow:after, .top-arrow:after{
+    box-shadow: none !important;
+}
+
+.bottom-arrow{
+    background-image: url(../img/arrow_down_circle.png);
+}
+
+.top-arrow{
+    background-image: url(../img/arrow_top_circle.png);
+}
+
+
+.iconMasEstablish{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    margin: 14% 1%;
+    background-image: url(../img/see_charge_icon.png);
+}
+.iconMenosEstablish{
+    width: 25px;
+    height: 25px;
+    background-size: 100%;
+    margin: 14% 1%;
+    background-image: url(../img/less_icon.png);
+    background-repeat: no-repeat;
+    background-position: 94%;
+}
+.checkEstablishmentSelected, .checkBagSelected{
+    width: 20px !important;
+    height: 20px !important;
+    position: relative !important;
+    float: right;
+    margin-right: 2.5% !important;
+    margin-top: 0px !important;
+    background-color: white !important;
+    background-image: url(../img/selected_circle_icon.png) !important;
+}
+
+.checkEstablishmentSelected::after, .checkBagSelected::after{
+    background-color: white !important;
+    background-image: url(../img/selected_circle_icon.png) !important;
+}
+
+#establish .ui-checkbox::after, .cardRelievedWorkerData_workersAnnex .ui-checkbox::after, .cardRegisteredWorkerData_workersAnnex .ui-checkbox::after{
+    background-color: white !important;
+    background-image: url(../img/selected_circle_icon.png) !important;
+}
+
+#establish .ui-checkbox, .cardRelievedWorkerData_workersAnnex .ui-checkbox::after, .cardRegisteredWorkerData_workersAnnex .ui-checkbox::after{
+    opacity: 0
+}
+
+#establish .checkmark, .cardRelievedWorkerData_workersAnnex .checkmark, .cardRegisteredWorkerData_workersAnnex .checkmark {
+    width: 25px !important;
+    height: 25px !important;
+    position: absolute !important;
+    right: 8.5%;
+    float: right;
+    margin-right: 2.5% !important;
+    margin-top: 0px !important;
+    background-color: transparent;
+}
+
+.checkmarkSelected{
+    background-image: url(../img/selected_circle_icon.png) !important;
+    background-size: contain;
+    background-color: transparent;
+}
+
+#campActivityId-button{
+    width: 175px !important;  
+}
+.rural{
+    background-color: #9dbe57;
+}
+.ui-controlgroup-controls {
+    z-index: 0;
+}
+div#three {
+    background-color: #fff;
+}
+
+.btnNextDiv {
+    margin: 10% auto;
+}
+#seecharge .btnNextDiv{
+    margin: 0% auto;
+}
+label.ui-btn.ui-corner-all.ui-btn-inherit.ui-btn-icon-left {
+    background-color: #fff;
+    border-style: none;
+}
+.top-arrow{
+    position: fixed;
+        
+}
+.bottom-arrow{
+    position: fixed;
+    
+}
+.ui-header-fixed.ui-fixed-hidden {
+    top: 0 !important;
+    padding-top: 1px;
+}
+.shownLocationContent.ui-collapsible.ui-collapsible-inset.ui-corner-all.ui-collapsible-themed-content.ui-collapsible-collapsed{
+    padding-bottom: 0 !important;
+}
+.geoClearIcon{
+    margin-top: 2% !important;;
+    border: none;
+}
+.hide{
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s;
+}
+.show{
+    opacity: 1;
+    display: block;
+    transition: opacity 0.5s;
+}   
+.eliminarIcon{
+    background-image: url(../img/eliminarResponsable.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2em !important;
+    margin-left: 5%;
+    margin-top: 0%;
+    height: 30px;
+}   
+.inputGeoreference {
+    width: 87% !important;
+    float: left !important;
+    margin-right: 5%;
+}
+.cancelIcon{
+    width: 25px;
+}
+
+.inputTextRadioOtro{
+    position: absolute !important;
+    top: 4% !important;
+    width: 81% !important;
+    left: 14% !important;
+}
+
+/*-------------------------- ALTA DE TRABAJADORES--------------------- */
+
+#workersAnnex .recordCard{
+    height: 12em
+}
+
+#formWorkersAnnex1 label{
+    font-size: 16px !important;
+    margin-bottom: 0;
+    margin-top: 10px;
+    z-index: 0
+}
+
+#formWorkersAnnex1 .ui-input-text{
+    box-shadow: none;
+}
+
+.cardRelievedWorkerData_workersAnnex .shownLocationContent .ui-icon-plus:after, .cardRegisteredWorkerData_workersAnnex .shownLocationContent .ui-icon-plus:after{
+    box-shadow: none !important;
+    background-color: transparent;
+    background-image: url("../img/add_circle_grey.png");
+    background-size: 100% !important;
+    background-position: left center;
+    margin-right: 10px;
+}
+
+.cardInspectorData_workersAnnex{
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #817f5f;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    height: auto;
+    margin: 5% auto;
+    width: 80%;
+    margin-bottom: 0;
+    display: block
+}
+
+.cardRelievedWorkerData_workersAnnex{
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-shadow: none;
+    color: #817f5f;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    height: auto !important;
+    margin: 5% auto !important;
+    width: 80%;
+    margin-bottom: 0;
+    display: block;
+    overflow: -webkit-paged-x;
+}
+
+
+.cardRegisteredWorkerData_workersAnnex{
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-shadow: none;
+    color: #817f5f;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    height: auto !important;
+    margin: 5% auto;
+    width: 80%;
+    margin-bottom: 0;
+    display: block;
+    overflow: auto;
+}
+
+.divSendWorkersAnnex {
+    padding: 5%;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    margin: 5% auto;
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.cardRelievedWorkerData_workersAnnex h3{
+    width: 100%;
+}
+
+.cardRegisteredWorkerData_workersAnnex h3{
+    width: 100%;
+}
+
+.cardRegisteredWorkerData_workersAnnex .ui-collapsible, .cardRelievedWorkerData_workersAnnex .ui-collapsible{
+    margin-top: 15px !important;
+    display: block;
+    float: left;
+    border-color: #817f5f;
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-collapsible-heading, .cardRegisteredWorkerData_workersAnnex .ui-collapsible-heading{
+    border-color: #817f5f !important;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: -1px !important;
+    margin-top: -1px;
+    box-shadow: none !important;
+    float: left;
+    display: block; 
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-collapsible-heading a, .cardRegisteredWorkerData_workersAnnex .ui-collapsible-heading a{
+    border: none;
+    text-align: left !important;
+}
+
+#formWorkersAnnex1 label, #formWorkerAnnex2 label{
+    text-align: left;
+}
+
+.cardRelievedWorkerData_workersAnnex #formWorkerAnnex2>li, .cardRegisteredWorkerData_workersAnnex #formWorkerAnnex2>li{
+    display: inline-block;
+    width: 48%;
+    margin-left: 1%;
+    float: left;
+    margin-right: 1%;
+}
+.cardRelievedWorkerData_workersAnnex .fullInputs, .cardRegisteredWorkerData_workersAnnex .fullInputs{
+    display: inline-block !important;
+    float: left !important;
+    width: 100% !important
+}
+
+.cardRelievedWorkerData_workersAnnex .leftInputs, .cardRegisteredWorkerData_workersAnnex .leftInputs{
+    display: inline-block !important;
+    float: left;
+    width: 98%
+}
+
+.cardRelievedWorkerData_workersAnnex .rightInputs, .cardRegisteredWorkerData_workersAnnex .rightInputs{
+    display: inline-block !important;
+    float: right;
+    width: 98%
+}
+
+#occupationDiv_worker input{
+    border-radius: 0px !important;
+    margin-left: 10px;
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 5%;
+    box-shadow: none !important;
+    background-color: transparent;
+    background-size: 4% !important;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-image: none !important;
+}
+
+.checkBagSelected{
+    width: 20px !important;
+    height: 20px !important;
+    position: relative !important;
+    float: left;
+    margin-right: 2.5% !important;
+    margin-top: -25px !important;
+    background-color: white !important;
+    background-image: url(../img/selected_circle_icon.png) !important;
+    z-index: 30 !important;
+    display: none;
+}
+
+.checkBagSelected::after{
+    background-color: white !important;
+    background-image: url(../img/selected_circle_icon.png) !important;
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-checkbox label, .cardRegisteredWorkerData_workersAnnex .ui-checkbox label{
+
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-checkbox::after, .cardRegisteredWorkerData_workersAnnex .ui-checkbox::after{
+    background-color: white !important;
+    background-image: url(../img/selected_circle_icon.png) !important;
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-checkbox::after, .cardRegisteredWorkerData_workersAnnex .ui-checkbox::after{
+    opacity: 0 !important;
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-btn.ui-checkbox-off:after, .cardRegisteredWorkerData_workersAnnex .ui-btn.ui-checkbox-off:after{
+    background-color: transparent;
+    background-image: url(../img/not_selected_circle.png);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.cardRelievedWorkerData_workersAnnex .ui-btn.ui-checkbox-on:after, .cardRegisteredWorkerData_workersAnnex .ui-btn.ui-checkbox-on:after{
+    background-color: transparent;
+    background-image: url(../img/selected_circle_icon.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.cardRelievedWorkerData_workersAnnex .checkmark, .cardRegisteredWorkerData_workersAnnex .checkmark {
+    width: 25px !important;
+    height: 25px !important;
+    position: absolute !important;
+    right: 8.5%;
+    float: right;
+    margin-right: 2.5% !important;
+    margin-top: 0px !important;
+    background-color: transparent;
+}
+
+#formWorkerAnnex2 .ui-select, #formWorkersAnnex1 .ui-select{
+    margin-top: 5px;
+    height: 100% !important;
+}
+
+#formWorkerAnnex2 .ui-select div, #formWorkersAnnex1 .ui-select div{
+    padding-top: 10px;
+    padding-bottom: .2em
+}
+
+.cardWorker{
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-shadow: none;
+    color: #817f5f;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    height: 35px;
+    display: block;
+    margin: 5% auto;
+    width: 80%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.cardWorker span{
+    margin-top: 15px;
+}
+
+.cardWorker span h3{
+    width: 60%;
+    float: left;
+    margin-top: 20px
+}
+
+.cardWorker span .deleteWorker{
+    float: left;
+    background-image: url(../img/eliminarResponsable.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*width: 2em !important;*/
+    margin-left: 14%;
+    margin-top: 5%;
+    width: 25px;
+    height: 35px;
+}
+
+.cardWorker span .editWorker{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 25px;
+    height: 35px;
+    float: left;
+    margin: 5%;
+    margin-left: 3.5%;
+}
+
+.cardWorker span a{
+    float: left;
+    margin-right: 15px;
+}
+
+#formWorkersAnnex1{
+    margin-top:20px;
+}
+
+.addWorker {
+    width: 40%;
+    margin: 10px auto;
+    background: #817f5f !important;
+    border-color: #817f5f !important;
+    border-radius: 0 !important;
+    text-shadow: none !important;
+    margin-bottom: 5%;
+    font-size: small;
+    color: white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.sendedContent {
+    float: right;
+    margin-right: 5% !important;
+    position: absolute;
+    right: 4%;
+    width: 8em;
+    height: 15px;
+}  
+.sendedLabel {
+    position: absolute;
+    float: right;
+    font-size: 1em !important;
+    left: 1em;
+}
+.sendedImg {
+    width: 2em;
+    position: absolute;
+    bottom: -1px;
+    right: 5%;
+}
+
+#workersAnnex .btnNextDiv{
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0;
+}
+
+#workersAnnex .btnNextDiv a{
+    width: 90%;
+    height: 100% !important;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+#humanTrafficAnnex>.ui-content{
+    padding-top: 45px !important;
+}
+
+#humantraffic, #workconditions, #childlabor{
+    background-color: white;
+    padding: 5%;
+    color: #817f5f;
+    padding-top: 1px;
+    font-family: "Helvetica Bold";
+    font-size: 14px !important;
+    margin: 5% auto;
+    width: 80%;
+    margin-bottom: 0;
+}
+
+#humantraffic h4, #workconditions h4, #childlabor h4{
+    font-family: "Helvetica Medium";
+    font-weight: normal;
+    font-size: 12px
+}
+
+#humantraffic label, #workconditions label, #childlabor label{
+    margin-top: 30px;
+}
+
+#humanTrafficQuestions .ui-select div, #workConditionsQuestions .ui-select div, #childLaborQuestions .ui-select div, .cardRelievedWorkerData_workersAnnex .ui-select div, .cardRegisteredWorkerData_workersAnnex .ui-select div{
+    height: auto !important;
+}
+
+#humanTrafficQuestions .ui-select div::after, #workConditionsQuestions .ui-select div::after, #childLaborQuestions .ui-select div::after, .cardRelievedWorkerData_workersAnnex .ui-select div::after, .cardRegisteredWorkerData_workersAnnex .ui-select div::after{
+    background-size: 120%;
+    background-color: rgb(129, 127, 95, 0.9);
+    right: 0px;
+    top: 0px;
+    border-radius: 0;
+    height: 100%;
+    width: 1.5em;
+    margin-top:auto;
+    margin-right: -1px;
+    padding-right: 0 !important;
+    text-shadow: none;
+}
+
+#humanTrafficQuestions .ui-select div:focus, #workConditionsQuestions .ui-select div:focus, #childLaborQuestions .ui-select div:focus, .cardRelievedWorkerData_workersAnnex .ui-select div:focus, .cardRegisteredWorkerData_workersAnnex .ui-select div:focus{
+    border-width: 1px;
+    border-color: #817f5f;
+    border-style: solid;
+    background-color: white;
+}
+
+#humanTrafficAnnex .cardSeparator{
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.50), 10px 1px 2px rgba(0,0,0,0.7);
+    height: 1px;
+    width: 120%;
+    left: -10% !important;
+    position: relative;
+    background-color: transparent;
+    margin: 0px 0px 30px 0px;
+}
+
+#humanTrafficAnnex input[type="textarea"]{
+    color: #817f5f;
+    font-family: "Helvetica Medium";
+    font-size: 14px !important;
+    font-weight: normal;
+    box-shadow: none;
+    border-width: 1px;
+    border-color: #817f5f;
+    border-style: solid;
+    padding: 5%;
+    padding-top: 7.5px;
+    margin-top: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 30px;
+    resize: none;
+    white-space: nowrap !important;
+}
+
+#humanTrafficAnnex input[type="textarea"]:focus, #humanTrafficAnnex .ui-focus{
+    box-shadow: none !important;
+    border-width: 1px;
+    border-color: #817f5f;
+    border-style: solid;
+    border-radius: 0;
+    outline: none !important;
+}
+
+#humanTrafficAnnex input[type="date"], .cardRelievedWorkerData_workersAnnex input[type="date"], .cardRegisteredWorkerData_workersAnnex input[type="date"]{
+    border-color: #817f5f;
+    border-style: solid;
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none !important;
+    color: #817f5f;
+    font-size: 14px !important;
+    font-weight: normal;
+}
+
+#humanTrafficAnnex input::placeholder{
+    color: #817f5f !important;
+    font-family: "Helvetica Medium";
+    font-size: 14px !important;
+}
+
+#humanTrafficAnnex .ui-btn-icon-calendar, .cardRelievedWorkerData_workersAnnex .ui-btn-icon-calendar, .cardRegisteredWorkerData_workersAnnex .ui-btn-icon-calendar{
+    background-image: url(../img/calendar.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 98% center;
+}
+
+#humanTrafficAnnex input[type="date"]:active, .cardRelievedWorkerData_workersAnnex input[type="date"]:active, .cardRegisteredWorkerData_workersAnnex input[type="date"]:active{
+    outline: none;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+#humanTrafficAnnexInspection, #humanTrafficAnnexRandomInspection, #humanTrafficAnnexWithoutLoad, #humanTrafficAnnexWorkersAnnex{
+    background-color: #817f5f !important;
+    border: none;
+}
+
+.workersAnnex_inspectionWithoutCharge {
+    width: 40%;
+    margin: 0 auto;
+    background-color:#817f5f !important;
+    border-color:#817f5f !important;
+    color: #fff !important;
+    margin-bottom: 5%;
+    font-size: small;
+    border:none;
+    text-shadow: none !important;
+}

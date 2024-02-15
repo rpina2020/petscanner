@@ -1,0 +1,183 @@
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#login .ui-content {
+    padding: 10%;
+}
+
+a.ui-link {
+    font-size: small;
+    text-decoration: none;
+}
+
+.ui-content {
+    padding: 0;
+}
+
+a#btn_qr {
+    width: 4em;
+    height: 4em;
+    background: indigo;
+    position: absolute;
+    left: 10.5em;
+    border-radius: 35px;
+    top: 75%;
+}
+
+#btn_qr_img {
+    width: 69%;
+    margin: 15%;
+}
+
+#content_scan_banner {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    margin-top: 5em;
+}
+
+#content_home {
+    max-height: 82vh;
+    background: indigo;
+    height: 82vh;
+    padding: 2% 5%;
+}
+
+#content_home ul.ui-listview {
+    padding: 5%;
+}
+
+div#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+body * {
+    text-shadow: none !important;
+}
+
+
+/*----- saco borders de los grids de header y footer home -----*/
+#header .ui-bar.ui-bar-a, #footer .ui-bar.ui-bar-a {
+    border: none;
+}
+
+.img_loader_content{
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*---- CARDS ----*/
+#cards{
+    padding: 17% 10% 0;
+}
+a.ui-icon-user {
+    position: absolute;
+}
+.ui-btn-icon-top:after, .ui-btn-icon-bottom:after {
+    left: 86%;
+}
+li.ui-li-static.ui-body-inherit.ui-li-has-thumb {
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding-right: 0 !important;
+}
+#cards img {
+    max-height: 24em;
+    max-width: 42% !important;
+    margin: 0 !important;
+    height: 10em;
+}
+ul#taggs_rst li img {
+    border: solid 2px #9b9b9b;
+    border-radius: 50px;
+    width: 60px;
+    padding: 2.5%;
+    margin: 1%;
+}
+
+.content_grid_cards{
+    float: right !important;
+    width: 85%;
+    font-size: small;
+}
+
+#taggs_rst h4 {
+    margin: 0 !important;
+}
+
+#taggs_rst a.ui-icon-tag.ui-btn-icon-notext.ui-corner-all {
+    position: absolute;
+    right: 15px;
+    top: 30px;
+}
+
+#taggs_rst span {
+    margin-left: 15%;
+}
+
+#taggs_rst a.ui-icon-user.ui-btn-icon-notext.ui-corner-all {
+    top: 63%;
+    left: 33%;
+    position: absolute;
+}
+
+#cards li .ui-bar.ui-bar-a {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    line-height: 3 !important;
+    padding-left: 6% !important;
+}
+
+#cards li a.ui-btn.ui-shadow.ui-corner-all.ui-icon-delete.ui-btn-icon-notext {
+    margin: 0;
+}
+/*---- CARDS ----*/
+
+.info-pet{
+    padding: 2%;
+    height: auto;
+    position: absolute;
+    width: 96%;
+}
+
