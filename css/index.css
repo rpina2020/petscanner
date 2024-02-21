@@ -1815,8 +1815,8 @@ div#comments-button-set {
 }
 
 #login, #forcepassword, #forgetpassword{
-    background-color: #bfbfbf;
-    color: white;
+    background-color: transparent;
+    color: black;
     bottom: 0px;
     text-align: center;
     background-image: url("../img/background_transparent.png");

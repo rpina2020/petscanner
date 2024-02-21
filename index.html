@@ -10,7 +10,7 @@
         <!-- aspecto del visor, propiedades gráficas adaptadas a la escala de dispositivos moviles -->
         
         
-      <!-- Inclusión de scripts necesarios -->
+        <!-- Inclusión de scripts necesarios -->
         <script type="text/javascript" src="cordova.js"></script> <!-- PhoneGap -->
         <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
         <script type="text/javascript" src="js/jquery-1.11.3.js"></script> <!-- JQuery -->
@@ -24,7 +24,7 @@
         <link rel="stylesheet" type="text/css" href="css/mods.css" />
         <title>Pet Scanner</title>
     </head>
-    <body>
+    <body style="background: linear-gradient(rgba(242, 234, 211, 0.4), rgba(242, 234, 211, 1)), url(img/paw_bck.jpg); background-size: 86%;">
        <section id="login" data-role="page">           
             <div data-role="content"> 
                 <div class="stateconnection"></div> 
@@ -65,15 +65,11 @@
                 </form>     
             </div>
         </section>
-        <section id="forgetpassword" data-role="page">           
-            <div data-role="header" data-position="fixed" data-tap-toggle="false">
-                <a href="#login" id="buttonBackForgetPassword" class="ui-btn-left ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-carat-l ui-btn-icon-notext"></a>
-                <h4 class="title-long">RECUPERAR CONTRASE&Ntilde;A</h4>
-                <div class="stateconnection"></div> 
-            </div>
+        <section id="forgetpassword" data-role="page">                       
 
             <div data-role="content">   
                 <div class="app-logo"></div>
+                <h4 class="title-long">RECUPERAR CONTRASE&Ntilde;A</h4>
                 <div id="errorMessageForgetPassword"></div>
                 <form id="formForgetPassword">
                     <label>Nombre de Usuario</label>
@@ -82,6 +78,9 @@
                     <input type="number" id="personalidForgetPassword" name="personalidForgetPassword" max="999999999" min="10000000" placeholder="DNI" required>
           
                     <input type="submit" value="RECUPERAR" id="buttonForgetPassword">
+                        <a href="#login" class="back-btn ui-link">VOLVER</a>
+                    
+                    
 
                 </form>     
             </div>
@@ -112,8 +111,7 @@
              <!-- Inicio menu header -->
             <div data-id="menu" data-position="fixed" data-theme="b" class="main-menu">
                 <nav data-role="navbar" data-iconpos="top">
-                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>
-                    <!-- <h4 class="tituloNav">Lista de cargos Programados</h4> -->
+                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>                    
                 </nav>
             </div>
             <!-- Fin menu header -->            
@@ -125,15 +123,8 @@
                 <div id="content_loader" style="margin: 80% 0;">
                     <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" class="img_loader_content">
                 </div>
-                <ul id="cards" class="ui-listview"></ul>
-                
-                <!-- <div class="content_scan_banner">   
-                    <img src="img/scanner_backhome.png" style="width: 65%;margin: 13% 23% 0;">
-                    <h4 style="text-align: center;">ESCANEA EL CODIGO PARA AGREGAR TU MASCOTA</h4>    
-                    <a href="#" id="btn_qr">
-                        <img src="img/qr_blanco.png" id="btn_qr_img">
-                    </a>
-                </div> -->
+                <ul id="cards" class="ui-listview"></ul>                
+               
                 <a href="#" id="btn_qr">
                     <img src="img/qr_blanco.png" id="btn_qr_img">
                 </a>
@@ -166,8 +157,7 @@
              <!-- Inicio menu header -->
             <div data-id="menu" data-position="fixed" data-theme="b" class="main-menu">
                 <nav data-role="navbar" data-iconpos="top">
-                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>
-                    <!-- <h4 class="tituloNav">Lista de cargos Programados</h4> -->
+                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>                    
                 </nav>
             </div>
             <!-- Fin menu header -->            
@@ -216,23 +206,11 @@
         </section>     
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer ></script>
- 
-
         
-
-
-        <!-- <script type="text/javascript" src="js/db.js"></script> Funciones principales de la base de datos -->
         <script type="text/javascript" src="js/modules.js"></script> <!-- Módulos incluídos en la app -->
-        <script type="text/javascript" src="js/core.js"></script> <!-- Nucleo principal de funciones de la app -->
-        <!-- <script type="text/javascript" src="js/dictionary.js"></script> Diccionario --> -->
-        <!-- <script type="text/javascript" src="js/beacons.js"></script>Módulo de Beacons --> -->
-        <!-- <script type="text/javascript" src="js/gps.js"></script> Módulo de GPS --> -->
+        <script type="text/javascript" src="js/core.js"></script> <!-- Nucleo principal de funciones de la app -->        
         <script type="text/javascript" src="js/framework.js"></script> <!-- Funciones compartidas de módulos de la app -->
-        <script type="text/javascript" src="js/taggsModule.js"></script>
-        <!-- <script type="text/javascript" src="js/loadInspection.js"></script> -->
-        <!-- <script type="text/javascript" src="js/randomInspection.js"></script> -->
-        <!-- <script type="text/javascript" src="js/workersAnnex.js"></script> -->
-        <!-- <script type="text/javascript" src="js/qunit-tests.js"></script> Tests de Unidad de módulos de la app -->
+        <script type="text/javascript" src="js/taggsModule.js"></script>        
         <script type="text/javascript">
         // Initialize and add the map
         function initMap() {
