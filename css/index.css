@@ -1870,7 +1870,7 @@ div#comments-button-set {
     background-position: center;
     background-repeat: no-repeat;
     min-width: 262px;
-    width: 80% !important;
+    width: 185px !important;
     min-height: 171px;
     height: 30% !important;
     margin-top: 8%;
@@ -2002,6 +2002,8 @@ div#comments-button-set {
 }
 
 .title-long{
+    color: #5d1a8f;
+    font-size: 1.4rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -2254,4 +2256,8 @@ a#val_1_popup:after, a#val_2_popup:after, a#val_3_popup:after, a#val_4_popup:aft
 
 .ui-loader.ui-corner-all.ui-body-a.ui-loader-verbose.ui-loader-textonly h1 {
     display: none;
+}
+
+.back-btn {
+    color: red;
 }
