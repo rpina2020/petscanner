@@ -1864,19 +1864,19 @@ div#comments-button-set {
     background-size: contain;    
 }
 .app-logo{
-    background-image: url("../img/logocompletoblanco.png");
+    background-image: url(../img/logocompletoblanco.png);
     background-size: 70%;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 262px;
-    width: 185px !important;
-    min-height: 171px;
-    height: 30% !important;
-    margin-top: 8%;
-    margin-bottom: 10%;
+    width: 240px !important;
+    height: 185px !important;
     margin-left: auto;
     margin-right: auto;
+}
+
+#forgetpassword .app-logo {
+    margin: 10.5% auto 0 auto;
 }
 
 #formLogin, #formForcePassword, #formForgetPassword{
