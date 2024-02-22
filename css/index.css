@@ -1816,7 +1816,7 @@ div#comments-button-set {
 
 #login, #forcepassword, #forgetpassword{
     background-color: transparent;
-    color: black;
+    color: #5d1a8f;
     bottom: 0px;
     text-align: center;
     background-image: url("../img/background_transparent.png");
@@ -1828,6 +1828,11 @@ div#comments-button-set {
 #login .ui-content, #forgetpassword .ui-content, #login .ui-content, #forcepassword .ui-content{
     vertical-align: middle;
     height: 94.3%;
+}
+
+#forcepassword .ui-content {
+    max-height: 63%;
+    height: 63%
 }
 
 #login .ui-content{
@@ -1875,7 +1880,7 @@ div#comments-button-set {
     margin-right: auto;
 }
 
-#forgetpassword .app-logo {
+#forgetpassword .app-logo, #forcepassword .app-logo {
     margin: 10.5% auto 0 auto;
 }
 
@@ -1944,6 +1949,7 @@ div#comments-button-set {
 #formLogin .ui-input-btn, #formForcePassword .ui-input-btn, #formForgetPassword .ui-input-btn, #seecharge #btnDownloadSeeCharge, .button-download{
     width: 70%;
     margin: 50px auto;
+    margin-bottom: 30px;
     max-width: 240px;
     font-family: "Helvetica Roman";
     text-shadow: none !important;
@@ -2258,6 +2264,6 @@ a#val_1_popup:after, a#val_2_popup:after, a#val_3_popup:after, a#val_4_popup:aft
     display: none;
 }
 
-.back-btn {
-    color: red;
+.register-btn {
+    margin-top: 20px;
 }
