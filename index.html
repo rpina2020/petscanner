@@ -20,8 +20,8 @@
         <script type="text/javascript" src="js/lodash.js"></script>
         <link href='css/fonts.css' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="css/mods.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="css/mods.css"/>
         <title>Pet Scanner</title>
     </head>
     <body style="background: linear-gradient(rgba(242, 234, 211, 0.4), rgb(179 179 179 / 36%)), url(img/paw_bck.jpg); background-size: 86%;">
@@ -62,7 +62,6 @@
                     <input type="password" id="newPassword" name="newPassword" minlength="8" placeholder="NUEVA CONTRASEÑA" required>
                     <label>Repetir Contraseña</label>
                     <input type="password" id="confirmNewPassword" name="confirmNewPassword" minlength="8" placeholder="REPETIR NUEVA CONTRASEÑA" required>
-
                     <input type="submit" value="ACTUALIZAR" id="botonRefreshPassword">
                     <a href="#login" class="back-btn">VOLVER</a>
 
@@ -90,15 +89,21 @@
             </div>
         </section>        
         <section id="home" data-role="page">
-            <div class="app-logo" style="background-size: 70%;width: 15vw !important;min-width: 35vw !important;height: 139px !important;float: left;position: absolute;top: -11px;margin: 0 !important;z-index: 5;"></div>
-            <header data-role="header" data-position="fixed">
+            <div class="app-logo app-logo-home"></div>
+            <header data-role="header" data-position="fixed">                    
                 <fieldset class="ui-grid-a">
                     <div class="ui-block-a">
                         <div class="iconHome"></div>
                     </div>
-                    <div class="ui-block-b">
+                    <nav data-role="navbar" data-iconpos="top">
+                        <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>                    
+                    </nav>                    
+                    <!-- <div class="ui-block-b">
                         <div class="stateconnection stateConnectionOnline"></div>
-                    </div>     
+                    </div> -->
+                    <div class="ui-block-b contenedor">
+                        <h2 class="titulo">Pet Scanner</h2>
+                    </div>                    
                 </fieldset>
             </header>                      
             <div data-role="panel" class="option-menu-panel" data-position="left" data-display="overlay">
@@ -113,11 +118,7 @@
             </div>
 
              <!-- Inicio menu header -->
-            <div data-id="menu" data-position="fixed" data-theme="b" class="main-menu">
-                <nav data-role="navbar" data-iconpos="top">
-                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>                    
-                </nav>
-            </div>
+           
             <!-- Fin menu header -->            
            
             <div data-role="content" class="ui-content-page">       
