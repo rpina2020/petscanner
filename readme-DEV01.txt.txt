@@ -24,3 +24,5 @@ c
 2 - acomodar tamaño de logo y centrar.
 3 - borrar encabezado "top" violeta y poner al header principal color violeta.
 4 - icono wifi pasarlo a la izquierda en el header.
+
+que onda
